@@ -1,4 +1,5 @@
-.hidden {
+/* Global styles */
+/* .hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -7,12 +8,13 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 html,
 body {
-  min-width: 1122px;
+  min-width: 1200px;
   min-height: 1750px;
+
 }
 
 body {
@@ -22,28 +24,264 @@ body {
   font-family: "PT Root UI", Arial, sans-serif;
   font-size: 16px;
   line-height: 150%;
-  font-weight: 700;
-  color: #2d2d2d;
+  font-weight: 500;
+  color: #707070;
   text-transform: none;
 
   background-color: #f2f2f2;
-  /* background-image: url("../img/bg_leather.png"); */
+
+  background-image: url("../img/screenshot.png");
+  background-size: 1200px auto;
   background-position: top center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+  color: #707070;
 }
 
 .button {
-  display: inline-block;
-
   font: inherit;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2d2d2d;
+
   text-align: center;
+  vertical-align: middle;
+
+  background-color: linear-gradient(135deg, #FFFFFF 0%, #E8E8E8 100%);
+  border: 2px solid #D79B00;
+  box-sizing: border-box;
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+  border-radius: 5px;
+}
+
+.button:hover,
+.button:focus {
+  color: #FFFFFF;
+  background-color: #D79B00;
+  box-shadow: none;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Header */
+header {
+  display: block;
+  width: 100%;
+  height: 60px;
+
+  background-color: #ffffff;
+}
+
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  width: 513px;
+  height: auto;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+
+  background: rgba(255, 253, 116, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(255, 253, 116);
+}
+
+.nav-links a {
+  color: #707070;
+}
+
+.nav-links a:focus,
+.nav-links a:hover {
+  color: #D79B00;
+}
+
+
+/* Start-screen */
+.slogan-heading {
+  font-size: 44px;
+  line-height: 130%;
+  font-weight: 600;
+  color: #2d2d2d;
+
+  background: rgba(113, 255, 120, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
+}
+
+.slogan-description {
+  font-size: 20px;
+  line-height: 150%;
+
+  background: rgba(113, 255, 120, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
+}
+
+.quiz-description {
+  font-size: 20px;
+  line-height: 150%;
+
+  background: rgba(113, 255, 120, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
+}
+
+.quiz-description
+.text-yellow {
+  color: #D79B00;
+}
+
+
+.features-list {
+  list-style: none;
+
+  background: rgba(113, 255, 120, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
+}
+
+.features-item {
+  text-align: left;
+
+  background: rgba(113, 255, 120, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
+}
+
+.features-item
+.text-black {
+  color: #2d2d2d;
+}
+
+
+/* Section headings */
+.section-heading {
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 500;
+  color: #2d2d2d;
+
+  background: rgba(58, 58, 58, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(58, 58, 58);
+}
+
+.section-description {
+  font-size: 20px;
+  line-height: 130%;
+
+  background: rgba(58, 58, 58, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(58, 58, 58);
+}
+
+
+/* Screen-2 (works)*/
+.works-item img:hover {
+  opacity: 0.9;
+}
+
+.works-list {
+  
+  background: rgba(255, 138, 138, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(255, 138, 138);
+}
+
+.works-item {
+
+  background: rgba(255, 138, 138, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(255, 138, 138);
+}
+
+.more-info,
+.link-to-site {
+  color: #D79B00;
+  opacity: 0.6;
+  line-height: 130%;
+}
+
+.more-info:hover,
+.link-to-site:hover,
+.more-info:focus,
+.link-to-site:focus {
+  color: #D79B00;
+  opacity: 1;
+}
+
+
+/* Section clients */
+
+
+/* Section services */
+.services-list {
+
+  background: rgba(150, 138, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(150, 138, 255);
+}
+
+.services-item {
+
+  background: rgba(150, 138, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(150, 138, 255);
+}
+
+.services-price {
+  font-size: 16px;
+  line-height: 130%;
+  color: #2d2d2d;
+}
+
+
+/* Section How to start? */
+
+
+/* Footer */
+.footer {
+
+  background: rgba(246, 149, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #D79B00;
+}
+
+.footer-copyright {
+
+  background: rgba(246, 149, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
+}
+
+.footer-social {
+
+  background: rgba(246, 149, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
+}
+
+.footer-links {
+
+  background: rgba(246, 149, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 130%;
 }

@@ -10,13 +10,6 @@
   overflow: hidden;
 } */
 
-html,
-body {
-  min-width: 1200px;
-  min-height: 1750px;
-
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -30,10 +23,10 @@ body {
 
   background-color: #f2f2f2;
 
-  background-image: url("../img/screenshot.png");
+  /* background-image: url("../img/screenshot.png");
   background-size: 1200px auto;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 ul {
@@ -75,43 +68,10 @@ h3 {
   color: #2d2d2d;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 
 /* Header */
-header {
-  display: block;
-  width: 100%;
-  height: 60px;
 
-  background-color: #ffffff;
-}
 
-.nav-bar .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
-  width: 513px;
-  height: auto;
-  justify-content: space-around;
-
-  margin: 0;
-  padding: 0;
-
-  background: rgba(255, 253, 116, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(255, 253, 116);
-}
-
-.nav-links a {
-  color: #707070;
-}
 
 .nav-links a:focus,
 .nav-links a:hover {
@@ -125,25 +85,16 @@ header {
   line-height: 130%;
   font-weight: 600;
   color: #2d2d2d;
-
-  background: rgba(113, 255, 120, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
 }
 
 .slogan-description {
   font-size: 20px;
   line-height: 150%;
-
-  background: rgba(113, 255, 120, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
 }
 
 .quiz-description {
   font-size: 20px;
   line-height: 150%;
-
-  background: rgba(113, 255, 120, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
 }
 
 .quiz-description
@@ -154,16 +105,6 @@ header {
 
 .features-list {
   list-style: none;
-
-  background: rgba(113, 255, 120, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
-}
-
-.features-item {
-  text-align: left;
-
-  background: rgba(113, 255, 120, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(113, 255, 120);
 }
 
 .features-item
@@ -178,35 +119,17 @@ header {
   line-height: 130%;
   font-weight: 500;
   color: #2d2d2d;
-
-  background: rgba(58, 58, 58, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(58, 58, 58);
 }
 
 .section-description {
   font-size: 20px;
   line-height: 130%;
-
-  background: rgba(58, 58, 58, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(58, 58, 58);
 }
 
 
 /* Screen-2 (works)*/
 .works-item img:hover {
   opacity: 0.9;
-}
-
-.works-list {
-  
-  background: rgba(255, 138, 138, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(255, 138, 138);
-}
-
-.works-item {
-
-  background: rgba(255, 138, 138, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(255, 138, 138);
 }
 
 .more-info,
@@ -229,18 +152,6 @@ header {
 
 
 /* Section services */
-.services-list {
-
-  background: rgba(150, 138, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(150, 138, 255);
-}
-
-.services-item {
-
-  background: rgba(150, 138, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(150, 138, 255);
-}
-
 .services-price {
   font-size: 16px;
   line-height: 130%;
@@ -252,36 +163,70 @@ header {
 
 
 /* Footer */
-.footer {
-
-  background: rgba(246, 149, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
-}
 
 .footer a:hover,
 .footer a:focus {
   color: #D79B00;
 }
 
-.footer-copyright {
-
-  background: rgba(246, 149, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
-}
-
-.footer-social {
-
-  background: rgba(246, 149, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
-}
-
-.footer-links {
-
-  background: rgba(246, 149, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(246, 149, 255);
-}
-
 .copyright {
   font-size: 12px;
   line-height: 130%;
+}
+
+
+/* GRID STYLES */
+.header {
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+
+.nav-bar {
+  display: flex;
+
+  width: 100%;
+  height: 60px;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+
+.logo {
+  width: 35px;
+  height: 28px;
+
+  margin: 0;
+  padding: 0;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+
+.nav-links {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
 }

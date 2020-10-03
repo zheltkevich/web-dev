@@ -27,7 +27,7 @@ body {
   text-transform: none;
 
   background-color: #f2f2f2;
-  background-image: url("../img/bg_leather.png");
+  /* background-image: url("../img/bg_leather.png"); */
   background-position: top center;
   background-repeat: repeat;
 }

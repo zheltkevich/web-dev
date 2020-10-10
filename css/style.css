@@ -182,48 +182,10 @@ h3 {
   box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
 }
 
-.nav-bar {
-  display: flex;
-
-  width: 100%;
-  height: 60px;
-
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
-}
-
-.nav-bar .container {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
-}
-
 .logo {
-  width: 35px;
+  display: block;
+  width: 36px;
   height: 28px;
-
-  margin: 0;
-  padding: 0;
-
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
-}
-
-.nav-links {
-  display: flex;
-
   margin: 0;
   padding: 0;
 

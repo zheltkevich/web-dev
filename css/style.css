@@ -177,7 +177,15 @@ h3 {
 
 
 /* GRID STYLES */
+.main-container {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+
 .header {
+  display: fixed;
+  top: 0px;
   background: #FFFFFF;
   height: 60px;
 }
@@ -214,10 +222,32 @@ h3 {
   margin: 16px 20px;
 }
 
+.links-wrapper {
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+
 .nav-links {
   display: flex;
-
-
-  margin: 0;
+  align-items: center;
   padding: 0;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
 }
+
+/* .nav-links:before {
+  content: ".nav-links";
+  font-family: "PT Root UI", Arial, sans-serif;
+  color: #000000;
+  font-size: 8px;
+  } */
+
+.nav-links li {
+  margin-left: 30px;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 1px rgb(65, 65, 65);
+}
+

@@ -42,6 +42,13 @@ body {
   background-repeat: no-repeat; */
 }
 
+button,
+button:focus,
+button:hover,
+button:active {
+  border: 1px solid #707070;
+}
+
 ul {
   list-style: none;
 }
@@ -583,6 +590,7 @@ box-shadow: inset 0 0 0 1px rgb(71, 71, 71); */
 .copyright-devmark a {
   display: flex;
   width: min-content;
+  padding-bottom: 3px;
 }
 
 .footer-social {
@@ -640,5 +648,12 @@ box-shadow: inset 0 0 0 1px rgb(71, 71, 71); */
   width: 60px;
   height: 25px;
   border: 1px solid #2d2d2d;
+  border-radius: 4px;
+}
+
+.go-top-button:hover,
+.go-top-button:focus,
+.go-top-button:active {
+  border: 1px solid #707070;
   border-radius: 4px;
 }

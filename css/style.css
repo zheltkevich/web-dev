@@ -137,6 +137,7 @@ a {
 .copyright {
   font-size: 12px;
   line-height: 130%;
+  width: max-content;
 }
 
 
@@ -163,7 +164,7 @@ a {
   top: 0;
   z-index: 100;
 
-  width: 100%;
+  width: 100vw;
   height: auto;
 
   background-color: #ffffff;
@@ -175,10 +176,6 @@ a {
   justify-content: space-between;
   margin: 16px 0;
   height: 28px;
-}
-
-.logo-link {
-  display: flex;
 }
 
 .nav-links {
@@ -228,7 +225,6 @@ a {
 
 
 .quiz {
-
   background-color: #ffffff;
   box-shadow: -7px 7px 14px rgba(220, 220, 220, 0.2), 7px -7px 14px rgba(220, 220, 220, 0.2), -7px -7px 14px rgba(255, 255, 255, 0.9), 7px 7px 18px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
   border-radius: 10px;
@@ -459,7 +455,7 @@ a {
 
 
 
-/* ````` FOOTER ````` */
+/* ----- FOOTER ----- */
 .footer {
 
   background: #FFFFFF;
@@ -494,13 +490,15 @@ a {
 }
 
 .copyright-devmark {
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .copyright-devmark a {
-  display: flex;
   width: min-content;
-  padding-bottom: 3px;
+}
+
+.copyright-devmark p {
+  margin-top: 3px;
 }
 
 

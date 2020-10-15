@@ -49,7 +49,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 
   font-family: "PT Root UI", Arial, sans-serif;
   font-size: 16px;
@@ -83,7 +82,6 @@ body {
 *:after {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -91,6 +89,7 @@ body {
 
 a {
   font: inherit;
+  color: inherit;
 }
 
 a,
@@ -124,6 +123,7 @@ input,
 button,
 textarea {
   font: inherit;
+  color: inherit;
 }
 
 input::-ms-clear {
@@ -132,11 +132,6 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
-}
-
-button:active {
-  background: none;
-  outline: none;
 }
 
 button::-moz-focus-inner {

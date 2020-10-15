@@ -78,6 +78,7 @@ body {
 *,
 *:hover,
 *:focus,
+*:active,
 *:before,
 *:after {
   margin: 0;

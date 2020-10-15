@@ -164,7 +164,7 @@ a {
   top: 0;
   z-index: 100;
 
-  width: 100vw;
+  width: 100%;
   height: auto;
 
   background-color: #ffffff;
@@ -574,24 +574,17 @@ a {
   border-radius: 4px;
 }
 
-.go-top-button:hover,
-.go-top-button:focus,
-.go-top-button:active {
-  border: 1px solid #707070;
-  border-radius: 4px;
-}
-
 
 
 
 
 /* ---------- ANIMATION ---------- */
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0deg);
   }
 
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }

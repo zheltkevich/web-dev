@@ -134,6 +134,11 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  background: none;
+  outline: none;
+}
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;

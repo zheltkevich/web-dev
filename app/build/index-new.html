@@ -5,10 +5,10 @@
 <head>
   <meta charset="utf-8">
   <title>Разработка сайтов</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../source/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <!-- <link rel="stylesheet" href="css/global.css"> -->
-  <link rel="stylesheet" href="css/style-mobile.css">
+  <link rel="stylesheet" href="css/style-new.css">
 </head>
 
 
@@ -18,27 +18,27 @@
   <!-- HEADER  -->
   <header class="header">
     <a href="#" class="header__logo">
-      <img class="header__logo-image" src="img/zh_logo.svg" width="36" height="28" alt="Логотип Желткевич">
+      <img class="header__logo-image" src="../source/img/zh_logo.svg" width="36" height="28" alt="Логотип Желткевич">
     </a>
-    <nav class="main-nav">
+    <nav class="header__navbar main-navbar">
       <button class="main-nav__toggle" type="button">
         Открыть меню
       </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="#">Работы</a>
+      <ul class="main-navbar__list">
+        <li class="main-navbar__item">
+          <a class="main-navbar__link" href="#">Работы</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#">Услуги и цены</a>
+        <li class="main-navbar__item">
+          <a class="main-navbar__link" href="#">Услуги и цены</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#">Обо мне</a>
+        <li class="main-navbar__item">
+          <a class="main-navbar__link" href="#">Обо мне</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#">FAQ</a>
+        <li class="main-navbar__item">
+          <a class="main-navbar__link" href="#">FAQ</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#">Контакты</a>
+        <li class="main-navbar__item">
+          <a class="main-navbar__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -48,60 +48,62 @@
   <!-- MAIN -->
   <main class="main">
 
-    <!-- Slogan -->
-    <section class="slogan">
-      <h1 class="slogan__title">
-        Разработка современных адаптивных сайтов
-      </h1>
-      <p class="slogan__subtitle">
-        Привет, меня зовут Александр Желткевич.<br>
-        Делаю и обслуживаю адаптивные сайты с 2018 года.
-      </p>
-    </section>
-
-    <!-- Quiz -->
-    <section class="quiz">
-      <h2 class="hidden">
-        Квиз-опрос
-      </h2>
-      <p class="quiz__description">
-        Пройдите онлайн-опрос<br>
-        <span class="quiz__description--text">за 3 минуты</span> и получите расчет<br>
-        стоимости проекта
-      </p>
-      <a href="#" class="quiz__button button">
-        Пройти опрос
-      </a>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-      <h2 class="hidden">
-        Преимущества
-      </h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <img class="features__icon" src="img/icon_contract.svg" alt="Работаю по договору">
-          <span class="features__item--text">Работаю по договору</span> с физ. и юр. лицами
-        </li>
-        <li class="features__item">
-          <img class="features__icon" src="img/icon_connect.svg" alt="Всегда на связи">
-          <span class="features__item--text">Всегда на связи</span> с 9:00 до 21:00
-        </li>
-        <li class="features__item">
-          <img class="features__icon" src="img/icon_project.svg" alt="Дизайн-проект">
-          <span class="features__item--text">Индивидуальный</span> дизайн-проект
-        </li>
-        <li class="features__item">
-          <img class="features__icon" src="img/icon_reconciliation.svg" alt="Согласование">
-          <span class="features__item--text">Согласование</span> на каждом этапе
-        </li>
-        <li class="features__item">
-          <img class="features__icon" src="img/icon_timing.svg" alt="Соблюдаю сроки">
-          <span class="features__item--text">Соблюдаю сроки</span> — это важно
-        </li>
-      </ul>
-    </section>
+    <div class="main__first-screen">
+      <!-- Slogan -->
+      <section class="slogan">
+        <h1 class="slogan__title">
+          Разработка современных адаптивных сайтов
+        </h1>
+        <p class="slogan__description">
+          Привет, меня зовут Александр Желткевич.<br>
+          Делаю и обслуживаю адаптивные сайты с 2018 года.
+        </p>
+      </section>
+  
+      <!-- Quiz -->
+      <section class="quiz">
+        <h2 class="hidden">
+          Квиз-опрос
+        </h2>
+        <p class="quiz__description">
+          Пройдите онлайн-опрос<br>
+          <span class="quiz__description--text">за 3 минуты</span> и получите расчет<br>
+          стоимости проекта
+        </p>
+        <a href="#" class="quiz__button button">
+          Пройти опрос
+        </a>
+      </section>
+  
+      <!-- Features -->
+      <section class="features">
+        <h2 class="hidden">
+          Преимущества
+        </h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <img class="features__icon" src="../source/img/icon_contract.svg" alt="Работаю по договору">
+            <span class="features__item--text">Работаю по договору</span> с физ. и юр. лицами
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="../source/img/icon_connect.svg" alt="Всегда на связи">
+            <span class="features__item--text">Всегда на связи</span> с 9:00 до 21:00
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="../source/img/icon_project.svg" alt="Дизайн-проект">
+            <span class="features__item--text">Индивидуальный</span> дизайн-проект
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="../source/img/icon_reconciliation.svg" alt="Согласование">
+            <span class="features__item--text">Согласование</span> на каждом этапе
+          </li>
+          <li class="features__item">
+            <img class="features__icon" src="../source/img/icon_timing.svg" alt="Соблюдаю сроки">
+            <span class="features__item--text">Соблюдаю сроки</span> — это важно
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <!-- Works -->
     <section class="works">
@@ -115,7 +117,7 @@
       <ul class="works__list">
         <li class="works__item">
           <a class="works__preview-link" href="#">
-            <img class="works__image" src="img/work-1_preview.png" width="480" height="375"
+            <img class="works__image" src="../source/img/work-1_preview.png" width="480" height="375"
               alt="Превью сайта granulir.ru">
             <h3 class="works__title">Интернет-магазин производителя сухих строительных смесей GRANULIR</h3>
           </a>
@@ -124,7 +126,7 @@
         </li>
         <li class="works__item">
           <a class="works__preview" href="#">
-            <img class="works__image" src="img/work-2_preview.png" width="480" height="375"
+            <img class="works__image" src="../source/img/work-2_preview.png" width="480" height="375"
               alt="Превью сайта aidetail.ru">
             <h3 class="works__title">Посадочная страница профессиональной студии детейлинга AiDetail</h3>
           </a>
@@ -146,46 +148,46 @@
       </p>
       <ul class="clients__list">
         <li class="clients__item">
-          <img class="clients__image" src="img/zdes_logo.svg" alt="Лаундж-бар ЗДЕСЬ">
+          <img class="clients__image" src="../source/img/zdes_logo.svg" alt="Лаундж-бар ЗДЕСЬ">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/aidetail_logo.svg" alt="Студия умного детейлинга AiDetail">
+          <img class="clients__image" src="../source/img/aidetail_logo.svg" alt="Студия умного детейлинга AiDetail">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/sinica.pro_logo.svg" alt="Студия рекламы Sinica.pro">
+          <img class="clients__image" src="../source/img/sinica.pro_logo.svg" alt="Студия рекламы Sinica.pro">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/rastsvetai_logo.svg" alt="Авторский ретрит Расцветай">
+          <img class="clients__image" src="../source/img/rastsvetai_logo.svg" alt="Авторский ретрит Расцветай">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/naturekitchen_logo.svg" alt="Доставка здоровой пищи Nature Kitchen">
+          <img class="clients__image" src="../source/img/naturekitchen_logo.svg" alt="Доставка здоровой пищи Nature Kitchen">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/Granulir_logo_red_R.svg"
+          <img class="clients__image" src="../source/img/Granulir_logo_red_R.svg"
             alt="Производитель сухих строительных смесей GRANULIR">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/SN_logo.svg" alt="Школа ногтевого сервиса Savelev Nails">
+          <img class="clients__image" src="../source/img/SN_logo.svg" alt="Школа ногтевого сервиса Savelev Nails">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/karat_logo.svg"
+          <img class="clients__image" src="../source/img/karat_logo.svg"
             alt="Обработчик искусственного и натурального камня KARAT">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/valery_logo.svg"
+          <img class="clients__image" src="../source/img/valery_logo.svg"
             alt="Студия наращивания ресниц и художественного оформления бровей Valery">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/freedom_logo.svg" alt="Дистрибьютор по продаже пеностекла Фридом">
+          <img class="clients__image" src="../source/img/freedom_logo.svg" alt="Дистрибьютор по продаже пеностекла Фридом">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/ecocupeli_logo.svg" alt="Производитель Эко-Купелей на заказ">
+          <img class="clients__image" src="../source/img/ecocupeli_logo.svg" alt="Производитель Эко-Купелей на заказ">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/vegansters_logo.svg" alt="Блогеры-вегетарианцы Веганстеры">
+          <img class="clients__image" src="../source/img/vegansters_logo.svg" alt="Блогеры-вегетарианцы Веганстеры">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="img/prime_logo.svg"
+          <img class="clients__image" src="../source/img/prime_logo.svg"
             alt="Компания по продаже и ремонту сотовой техники PRIME">
         </li>
       </ul>
@@ -314,7 +316,7 @@
         Хороший способ начать работу — это общение<br>
         Расскажите о ваших задачах и я предложу варианты
       </p>
-      <img class="howtostart__arrow" src="img/arrow.svg" alt="Стрелка">
+      <img class="howtostart__arrow" src="../source/img/arrow.svg" alt="Стрелка">
       <a class="howtostart__button button" href="#">Пройти опрос</a>
       <a class="howtostart__button button" href="#">Перейти в контакты</a>
     </section>
@@ -339,42 +341,42 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_phone.svg" alt="Позвонить">
+            <img class="social__image" src="../source/img/icon_phone.svg" alt="Позвонить">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_whatsapp.svg" alt="WhatsApp">
+            <img class="social__image" src="../source/img/icon_whatsapp.svg" alt="WhatsApp">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_instagram.svg" alt="Instagram">
+            <img class="social__image" src="../source/img/icon_instagram.svg" alt="Instagram">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_zen.svg" alt="Яндекс.Дзен">
+            <img class="social__image" src="../source/img/icon_zen.svg" alt="Яндекс.Дзен">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_telegram.svg" alt="Telegram">
+            <img class="social__image" src="../source/img/icon_telegram.svg" alt="Telegram">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_vk.svg" alt="ВКонтакте">
+            <img class="social__image" src="../source/img/icon_vk.svg" alt="ВКонтакте">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_linkedin.svg" alt="LinkedIn">
+            <img class="social__image" src="../source/img/icon_linkedin.svg" alt="LinkedIn">
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="">
-            <img class="social__image" src="img/icon_behance.svg" alt="Behance">
+            <img class="social__image" src="../source/img/icon_behance.svg" alt="Behance">
           </a>
         </li>
       </ul>
@@ -416,7 +418,7 @@
     <!-- Bottom -->
     <section class="footer__bottom">
       <a class="bottom__developer-link" href="#">
-        <img class="dev-mark" src="img/developer_mark.svg" alt="Разработчик Желткевич">
+        <img class="dev-mark" src="../source/img/developer_mark.svg" alt="Разработчик Желткевич">
       </a>
       <p class="copyright">
         © 2018—2020

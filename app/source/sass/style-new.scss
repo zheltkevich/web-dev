@@ -1,26 +1,6 @@
 @import "../sass/mixins";
 @import "../sass/variables";
+@import "../sass/global";
 
-@import "../sass/blocks/main-page/main-page__grid";
-@import "../sass/blocks/main-page/section-title";
-
-@import "../sass/blocks/main-page/header";
-@import "../sass/blocks/main-page/main-navbar";
-
-@import "../sass/blocks/main-page/main";
-@import "../sass/blocks/main-page/first-screen";
-@import "../sass/blocks/main-page/slogan";
-@import "../sass/blocks/main-page/quiz";
-@import "../sass/blocks/main-page/features";
-@import "../sass/blocks/main-page/works";
-@import "../sass/blocks/main-page/works-card";
-@import "../sass/blocks/main-page/clients";
-@import "../sass/blocks/main-page/services";
-@import "../sass/blocks/main-page/services-card";
-@import "../sass/blocks/main-page/howtostart";
-
-@import "../sass/blocks/main-page/footer";
-@import "../sass/blocks/main-page/left-column";
-@import "../sass/blocks/main-page/mid-column";
-@import "../sass/blocks/main-page/right-column";
-@import "../sass/blocks/main-page/bottom-bar";
+@import "../sass/blocks/header";
+@import "../sass/blocks/main-navbar"

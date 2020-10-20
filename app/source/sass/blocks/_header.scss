@@ -1,0 +1,36 @@
+@import "../mixins";
+
+.header {
+  width: 100%;
+  min-width: 320px;
+
+  &__wrapper {
+
+
+  }
+
+  &__navbar-toggle {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__logo {
+
+  }
+  
+  &__callme {
+    width: 30px;
+    height: 30px;
+  }
+  
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: #ffffff;
+  }
+
+  &__links {
+    @include plug
+  }
+}

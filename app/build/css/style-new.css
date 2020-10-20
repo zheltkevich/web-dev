@@ -1,1 +1,47 @@
-/* No CSS */
+.container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  padding: 0 10px 0;
+}
+
+.header {
+  width: 100%;
+  min-width: 320px;
+}
+
+.header__navbar-toggle {
+  width: 30px;
+  height: 30px;
+}
+
+.header__callme {
+  width: 30px;
+  height: 30px;
+}
+
+.header__navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+  background-color: #ffffff;
+}
+
+.header__links {
+  background-color: #b1d47879;
+}
+
+.main-navbar {
+  position: relative;
+  padding: 10px 0;
+  top: -400px;
+  background-color: #ffffff;
+}

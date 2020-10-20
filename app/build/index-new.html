@@ -5,9 +5,10 @@
 <head>
   <meta charset="utf-8">
   <title>Разработка сайтов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../source/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/global.css"> -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/style-new.css">
 </head>
 
@@ -17,40 +18,45 @@
 
   <!-- HEADER  -->
   <header class="header">
-    <a href="#" class="header__logo">
-      <img class="header__logo-image" src="../source/img/zh_logo.svg" width="36" height="28" alt="Логотип Желткевич">
-    </a>
-    <nav class="header__navbar main-navbar">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
-      </button>
-      <ul class="main-navbar__list">
-        <li class="main-navbar__item">
-          <a class="main-navbar__link" href="#">Работы</a>
-        </li>
-        <li class="main-navbar__item">
-          <a class="main-navbar__link" href="#">Услуги и цены</a>
-        </li>
-        <li class="main-navbar__item">
-          <a class="main-navbar__link" href="#">Обо мне</a>
-        </li>
-        <li class="main-navbar__item">
-          <a class="main-navbar__link" href="#">FAQ</a>
-        </li>
-        <li class="main-navbar__item">
-          <a class="main-navbar__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a class="header__navbar-toggle" type="button">
+        <img src="../source/img/burger.svg" alt="Открыть меню">
+      </a>
+      <a href="#" class="header__logo">
+        <img class="header__logo-image" src="../source/img/zh_logo.svg" width="36" height="28" alt="Логотип Желткевич">
+      </a>
+      <a href="tel:79617150015" class="header__callme">
+        <img src="../source/img/callme.svg" alt="Позвонить">
+      </a>
+      <nav class="header__navbar main-navbar">
+        <ul class="main-navbar__list">
+          <li class="main-navbar__item">
+            <a class="main-navbar__link" href="#">Работы</a>
+          </li>
+          <li class="main-navbar__item">
+            <a class="main-navbar__link" href="#">Услуги и цены</a>
+          </li>
+          <li class="main-navbar__item">
+            <a class="main-navbar__link" href="#">Обо мне</a>
+          </li>
+          <li class="main-navbar__item">
+            <a class="main-navbar__link" href="#">FAQ</a>
+          </li>
+          <li class="main-navbar__item">
+            <a class="main-navbar__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
 
   <!-- MAIN -->
   <main class="main">
 
-    <div class="main__first-screen">
+    <div class="main__first-screen first-screen container">
       <!-- Slogan -->
-      <section class="slogan">
+      <section class="first-screen__slogan slogan">
         <h1 class="slogan__title">
           Разработка современных адаптивных сайтов
         </h1>
@@ -59,9 +65,9 @@
           Делаю и обслуживаю адаптивные сайты с 2018 года.
         </p>
       </section>
-  
+
       <!-- Quiz -->
-      <section class="quiz">
+      <section class="first-screen__quiz quiz">
         <h2 class="hidden">
           Квиз-опрос
         </h2>
@@ -74,245 +80,255 @@
           Пройти опрос
         </a>
       </section>
-  
+
       <!-- Features -->
-      <section class="features">
+      <section class="first-screen__features features">
         <h2 class="hidden">
           Преимущества
         </h2>
         <ul class="features__list">
-          <li class="features__item">
-            <img class="features__icon" src="../source/img/icon_contract.svg" alt="Работаю по договору">
-            <span class="features__item--text">Работаю по договору</span> с физ. и юр. лицами
+          <li class="features__item features-card">
+            <img class="ffeatures-card__icon" src="../source/img/icon_contract.svg" alt="Работаю по договору">
+            <span class="features-card--textbold">Работаю по договору</span> с физ. и юр. лицами
           </li>
-          <li class="features__item">
-            <img class="features__icon" src="../source/img/icon_connect.svg" alt="Всегда на связи">
-            <span class="features__item--text">Всегда на связи</span> с 9:00 до 21:00
+          <li class="features__item features-card">
+            <img class="features-card__icon" src="../source/img/icon_connect.svg" alt="Всегда на связи">
+            <span class="features-card--textbold">Всегда на связи</span> с 9:00 до 21:00
           </li>
-          <li class="features__item">
-            <img class="features__icon" src="../source/img/icon_project.svg" alt="Дизайн-проект">
-            <span class="features__item--text">Индивидуальный</span> дизайн-проект
+          <li class="features__item features-card">
+            <img class="features-card__icon" src="../source/img/icon_project.svg" alt="Дизайн-проект">
+            <span class="features-card--textbold">Индивидуальный</span> дизайн-проект
           </li>
-          <li class="features__item">
-            <img class="features__icon" src="../source/img/icon_reconciliation.svg" alt="Согласование">
-            <span class="features__item--text">Согласование</span> на каждом этапе
+          <li class="features__item features-card">
+            <img class="features-card__icon" src="../source/img/icon_reconciliation.svg" alt="Согласование">
+            <span class="features-card--textbold">Согласование</span> на каждом этапе
           </li>
-          <li class="features__item">
-            <img class="features__icon" src="../source/img/icon_timing.svg" alt="Соблюдаю сроки">
-            <span class="features__item--text">Соблюдаю сроки</span> — это важно
+          <li class="features__item features-card">
+            <img class="features-card__icon" src="../source/img/icon_timing.svg" alt="Соблюдаю сроки">
+            <span class="features-card--textbold">Соблюдаю сроки</span> — это важно
           </li>
         </ul>
       </section>
     </div>
 
     <!-- Works -->
-    <section class="works">
-      <h2 class="section-title">
-        Работы
-      </h2>
-      <p class="section-description">
-        Адаптивные сайты, логотипы <br>
-        и другие работы
-      </p>
+    <section class="main__works works">
+      <div class="works__title section-title">
+        <h2 class="section-title__title">
+          Работы
+        </h2>
+        <p class="section-title__description">
+          Адаптивные сайты, логотипы <br>
+          и другие работы
+        </p>
+      </div>
       <ul class="works__list">
-        <li class="works__item">
-          <a class="works__preview-link" href="#">
-            <img class="works__image" src="../source/img/work-1_preview.png" width="480" height="375"
+        <li class="works__item works-card">
+          <a class="works-card__view-link" href="#">
+            <img class="works-card__image" src="../source/img/work-1_preview.png" width="480" height="375"
               alt="Превью сайта granulir.ru">
-            <h3 class="works__title">Интернет-магазин производителя сухих строительных смесей GRANULIR</h3>
+            <h3 class="works-card__title">Интернет-магазин производителя сухих строительных смесей GRANULIR</h3>
           </a>
-          <a class="works__more" href="#">Подробнее</a>
-          <a class="works__link" href="#">granulir.ru</a>
+          <a class="works-card__more-link" href="#">Подробнее</a>
+          <a class="works-card__site-link" href="#">granulir.ru</a>
         </li>
-        <li class="works__item">
-          <a class="works__preview" href="#">
-            <img class="works__image" src="../source/img/work-2_preview.png" width="480" height="375"
+        <li class="works__item works-card">
+          <a class="works-card__view-link" href="#">
+            <img class="works-card__image" src="../source/img/work-2_preview.png" width="480" height="375"
               alt="Превью сайта aidetail.ru">
-            <h3 class="works__title">Посадочная страница профессиональной студии детейлинга AiDetail</h3>
+            <h3 class="works-card__title">Посадочная страница профессиональной студии детейлинга AiDetail</h3>
           </a>
-          <a class="works__more-link" href="#">Подробнее</a>
-          <a class="works__site-link" href="#">aidetail.ru</a>
+          <a class="works-card__more-link" href="#">Подробнее</a>
+          <a class="works-card__site-link" href="#">aidetail.ru</a>
         </li>
       </ul>
-      <a class="works__view-all button" href="#">Смотреть все работы</a>
+      <a class="works__button button" href="#">Смотреть все работы</a>
     </section>
 
     <!-- Clients -->
-    <section class="clients">
-      <h2 class="section-title">
-        Клиенты
-      </h2>
-      <p class="section-description">
-        Мои довольные клиенты, с которыми я работал, 
-        либо работаю до сих пор
-      </p>
+    <section class="main__clients clients">
+      <div class="clients__title section-title">
+        <h2 class="section-title__title">
+          Клиенты
+        </h2>
+        <p class="section-title__description">
+          Мои довольные клиенты, с которыми я работал,
+          либо работаю до сих пор
+        </p>
+      </div>
       <ul class="clients__list">
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/zdes_logo.svg" alt="Лаундж-бар ЗДЕСЬ">
+          <img class="clients__logo" src="../source/img/zdes_logo.svg" alt="Лаундж-бар ЗДЕСЬ">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/aidetail_logo.svg" alt="Студия умного детейлинга AiDetail">
+          <img class="clients__logo" src="../source/img/aidetail_logo.svg" alt="Студия умного детейлинга AiDetail">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/sinica.pro_logo.svg" alt="Студия рекламы Sinica.pro">
+          <img class="clients__logo" src="../source/img/sinica.pro_logo.svg" alt="Студия рекламы Sinica.pro">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/rastsvetai_logo.svg" alt="Авторский ретрит Расцветай">
+          <img class="clients__logo" src="../source/img/rastsvetai_logo.svg" alt="Авторский ретрит Расцветай">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/naturekitchen_logo.svg" alt="Доставка здоровой пищи Nature Kitchen">
+          <img class="clients__logo" src="../source/img/naturekitchen_logo.svg"
+            alt="Доставка здоровой пищи Nature Kitchen">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/Granulir_logo_red_R.svg"
+          <img class="clients__logo" src="../source/img/Granulir_logo_red_R.svg"
             alt="Производитель сухих строительных смесей GRANULIR">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/SN_logo.svg" alt="Школа ногтевого сервиса Savelev Nails">
+          <img class="clients__logo" src="../source/img/SN_logo.svg" alt="Школа ногтевого сервиса Savelev Nails">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/karat_logo.svg"
+          <img class="clients__logo" src="../source/img/karat_logo.svg"
             alt="Обработчик искусственного и натурального камня KARAT">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/valery_logo.svg"
+          <img class="clients__logo" src="../source/img/valery_logo.svg"
             alt="Студия наращивания ресниц и художественного оформления бровей Valery">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/freedom_logo.svg" alt="Дистрибьютор по продаже пеностекла Фридом">
+          <img class="clients__logo" src="../source/img/freedom_logo.svg"
+            alt="Дистрибьютор по продаже пеностекла Фридом">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/ecocupeli_logo.svg" alt="Производитель Эко-Купелей на заказ">
+          <img class="clients__logo" src="../source/img/ecocupeli_logo.svg" alt="Производитель Эко-Купелей на заказ">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/vegansters_logo.svg" alt="Блогеры-вегетарианцы Веганстеры">
+          <img class="clients__logo" src="../source/img/vegansters_logo.svg" alt="Блогеры-вегетарианцы Веганстеры">
         </li>
         <li class="clients__item">
-          <img class="clients__image" src="../source/img/prime_logo.svg"
+          <img class="clients__logo" src="../source/img/prime_logo.svg"
             alt="Компания по продаже и ремонту сотовой техники PRIME">
         </li>
       </ul>
     </section>
 
     <!-- Services -->
-    <section class="services">
-      <h2 class="section-title">Услуги и цены</h2>
-      <p class="section-description">
-        Разработка, обслуживание и доработка сайтов для решения ваших задач
-      </p>
+    <section class="main__services services">
+      <div class="services__title section-title">
+        <h2 class="section-title__title">Услуги и цены</h2>
+        <p class="section-title__description">
+          Разработка, обслуживание и доработка сайтов для решения ваших задач
+        </p>
+      </div>
       <ul class="services__list">
-        <li class="services__item">
-          <h3 class="services__title">Одностраничный сайт, лендинг</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Одностраничный сайт, лендинг</h3>
+          <p class="services-card__price">
             от 35000 ₽
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Сайт, для презентации товара либо услуги,
             с возможностью собрать заявки и контактные данные клиентов
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Интернет-магазин,<br>E-commerce</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Интернет-магазин,<br>E-commerce</h3>
+          <p class="services-card__price">
             от 70000 ₽
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Сайт с широким выбором товаров, удобной навигацией,
             корзиной и возможностью делать покупки онлайн
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Индивидуальная разработка</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Индивидуальная разработка</h3>
+          <p class="services-card__price">
             по договоренности
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Сайт с комбинированным функционалом, рещающий индивидуальные задачи,
             содержащий несколько страниц и интеграцию различных сервисов
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Продвижение и оптимизация сайта</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Продвижение и оптимизация сайта</h3>
+          <p class="services-card__price">
             от 15000 ₽
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             SEO-оптимизация<br>
             Реклама в Яндекс.Директ<br>
             Реклама в Google AddWords
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Разработка дизайн-макета</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Разработка дизайн-макета</h3>
+          <p class="services-card__price">
             от 5000 ₽
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Дизайн сайта<br>
             Дизайн логотипа<br>
             Дизайн визиток<br>
             Дизайн презентаций<br>
             Дизайн полиграфии
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Обслуживание и поддержка</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Обслуживание и поддержка</h3>
+          <p class="services-card__price">
             по договоренности
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Консультирование<br>
             Доработка функционала<br>
             Обновление дизайна<br>
             Наполнение контентом<br>
             Перевод на другие языки
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Интеграция<br>сервисов</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Интеграция<br>сервисов</h3>
+          <p class="services-card__price">
             от 6000 ₽
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Базы клиентов (CRM)<br>
             Бронирование и запись<br>
             Складской учет<br>
             Калькуляторы<br>
             QUIZ-опросы
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
-        <li class="services__item">
-          <h3 class="services__title">Производство контента</h3>
-          <p class="services__price">
+        <li class="services__item services-card">
+          <h3 class="services-card__title">Производство контента</h3>
+          <p class="services-card__price">
             от 8000 ₽
           </p>
-          <p class="services__description">
+          <p class="services-card__description">
             Фото/видеосъёмка<br>
             Иллюстрирование<br>
             Копирайтинг<br>
             Оформление соц. сетей
           </p>
-          <a href="#" class="services__more-link">Узнать подробности</a>
+          <a href="#" class="services-card__more-link">Узнать подробности</a>
         </li>
       </ul>
     </section>
 
     <!-- How to start -->
-    <section class="howtostart">
-      <h2 class="section-heading">
-        Как начать работу
-      </h2>
-      <p class="section-description">
-        Давайте познакомимся и детально обсудим ваш проект<br>
-        Пройдите короткий опрос или свяжитесь со мной
-      </p>
-      <p class="howtostart__text section-description">
+    <section class="main__howtostart howtostart">
+      <div class="howtostart__title section-title">
+        <h2 class="section-title__title">
+          Как начать работу
+        </h2>
+        <p class="section-title__description">
+          Давайте познакомимся и детально обсудим ваш проект<br>
+          Пройдите короткий опрос или свяжитесь со мной
+        </p>
+      </div>
+      <p class="howtostart__text">
         Хороший способ начать работу — это общение<br>
         Расскажите о ваших задачах и я предложу варианты
       </p>
@@ -327,109 +343,113 @@
   <!-- FOOTER -->
   <footer class="footer">
 
-    <!-- Developer -->
-    <section class="footer__developer">
-      <h3 class="footer__title developer__title">Разработка сайтов</h3>
-      <p class="developer__text">Желткевич А.Е.</p>
-      <a class="developer__link" href="mailto:hello@zheltkevich.online">hello@zheltkevich.online</a>
-      <a class="developer__link" href="#">Задать вопрос</a>
-    </section>
-
-    <!-- Social -->
-    <section class="footer__social">
-      <h3 class="footer__title social__title">Связь со мной</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_phone.svg" alt="Позвонить">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_whatsapp.svg" alt="WhatsApp">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_instagram.svg" alt="Instagram">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_zen.svg" alt="Яндекс.Дзен">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_telegram.svg" alt="Telegram">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_vk.svg" alt="ВКонтакте">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_linkedin.svg" alt="LinkedIn">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__button" href="">
-            <img class="social__image" src="../source/img/icon_behance.svg" alt="Behance">
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Links -->
-    <section class="footer__links">
-      <h3 class="footer__title links-list__title">Полезные ссылки</h3>
-      <ul class="links-list__left-column">
-        <li class="links-list__item">
-          <a class="links-list__link" href="#">Бриф</a>
-        </li>
-        <li class="links__item">
-          <a class="links-list__link" href="#">Опрос</a>
-        </li>
-        <li class="links__item">
-          <a class="links-list__link" href="#">FAQ</a>
-        </li>
-        <li class="links__item">
-          <a class="links-list__link" href="#">Блог</a>
-        </li>
-      </ul>
-      <ul class="links__right-column">
-        <li class="links__item">
-          <a class="links-list__link" href="#">Главная</a>
-        </li>
-        <li class="links__item">
-          <a class="links-list__link" href="#">Услуги и цены</a>
-        </li>
-        <li class="links__item">
-          <a class="links-list__link" href="#">Обо мне</a>
-        </li>
-        <li class="links__item">
-          <a class="links-list__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Bottom -->
-    <section class="footer__bottom">
-      <a class="bottom__developer-link" href="#">
-        <img class="dev-mark" src="../source/img/developer_mark.svg" alt="Разработчик Желткевич">
-      </a>
-      <p class="copyright">
-        © 2018—2020
-      </p>
-      <button class="top__button button" type="button">
-        Наверх
-      </button>
-      <a class="bottom__link-privacy" href="#">
-        Политика конфиденциальности
-      </a>
-    </section>
+    <div class="container">
+      <!-- Developer -->
+      <section class="footer__left-column left-column">
+        <h3 class="footer__title left-column__title">Разработка сайтов</h3>
+        <p class="left-column__text">Желткевич А.Е.</p>
+        <a class="left-column__link" href="mailto:hello@zheltkevich.online">hello@zheltkevich.online</a>
+        <a class="left-column__link" href="#">Задать вопрос</a>
+      </section>
+  
+      <!-- Social -->
+      <section class="footer__mid-column mid-column">
+        <h3 class="footer__title mid-column__title">Связь со мной</h3>
+        <ul class="mid-column__list">
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_phone.svg" alt="Позвонить">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_whatsapp.svg" alt="WhatsApp">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_instagram.svg" alt="Instagram">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_zen.svg" alt="Яндекс.Дзен">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_telegram.svg" alt="Telegram">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_vk.svg" alt="ВКонтакте">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_linkedin.svg" alt="LinkedIn">
+            </a>
+          </li>
+          <li class="mid-column__item">
+            <a class="mid-column__social-button" href="">
+              <img class="mid-column__image" src="../source/img/icon_behance.svg" alt="Behance">
+            </a>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- Links -->
+      <section class="footer__right-column right-column">
+        <h3 class="footer__title right-column__title">Полезные ссылки</h3>
+        <div class="right-column__links">
+          <ul class="right-column__list">
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Бриф</a>
+            </li>
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Опрос</a>
+            </li>
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">FAQ</a>
+            </li>
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Блог</a>
+            </li>
+          </ul>
+          <ul class="right-column__list">
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Главная</a>
+            </li>
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Услуги и цены</a>
+            </li>
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Обо мне</a>
+            </li>
+            <li class="right-column__item">
+              <a class="right-column__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+  
+      <!-- Bottom -->
+      <section class="footer__bottom-bar bottom-bar">
+        <a class="bottom-bar__developer-link" href="#">
+          <img class="bottom-bar__dev-mark" src="../source/img/developer_mark.svg" alt="Разработчик Желткевич">
+        </a>
+        <p class="bottom-bar__copyright">
+          © 2018—2020
+        </p>
+        <button class="bottom-bar__button bottom-bar__button--top button" type="button">
+          Наверх
+        </button>
+        <a class="bottom-bar__link-privacy" href="#">
+          Политика конфиденциальности
+        </a>
+      </section>
+    </div>
 
   </footer>
 

@@ -1,9 +1,11 @@
 .first-screen {
 
   &__slogan {
+    margin-top: 100px;
   }
 
   &__quiz {
+    margin-top: 50px;
   }
 
   &__features {
@@ -45,10 +47,11 @@
 }
 
 .features {
+  margin-top: 50px;
 
   &__list {
     display: flex;
-    min-height: 200px;
+    align-items: center;
     overflow-x: auto;
   }
 
@@ -60,8 +63,10 @@
 }
 
 .features-card {
+  display: block;
+  margin-bottom: 15px;
   width: 200px;
-  height: 118px;
+  min-height: max-content;
   
 
   &__icon {

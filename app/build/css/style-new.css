@@ -220,11 +220,43 @@ body {
   margin-top: 30px;
 }
 
+.features__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 200px;
+  overflow-x: auto;
+}
+
+.features__item {
+  -webkit-flex-basis: 200px;
+      -ms-flex-preferred-size: 200px;
+          flex-basis: 200px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 30px;
+}
+
 .features-card {
   width: 200px;
+  height: 118px;
+}
+
+.features-card__icon {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
 }
 
 .features-card__text {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
   min-height: 88px;
   background: -webkit-linear-gradient(315deg, #E6E6E6 0%, #FEFEFE 100%);
   background: -o-linear-gradient(315deg, #E6E6E6 0%, #FEFEFE 100%);

@@ -10,6 +10,7 @@
 .header {
   width: 100%;
   min-width: 320px;
+  background-color: #ffffff;
 }
 
 .header__navbar-toggle {
@@ -32,10 +33,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
-  background-color: #ffffff;
 }
 
 .header__links {
+  display: block;
   background-color: #b1d47879;
 }
 
@@ -43,5 +44,4 @@
   position: relative;
   padding: 10px 0;
   top: -400px;
-  background-color: #ffffff;
 }

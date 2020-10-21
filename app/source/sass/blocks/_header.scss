@@ -1,13 +1,13 @@
-@import "../mixins";
-@import "../variables";
-
 .header {
+  position: sticky;
+  top: 0;
+
   width: 100%;
+  height: 50px;
   min-width: 320px;
   background-color: #ffffff;
 
   &__wrapper {
-
 
   }
 
@@ -33,6 +33,23 @@
   }
 
   &__links {
-    @include plug
+  }
+}
+
+.main-navbar {
+  position: relative;
+  padding: 10px 0;
+  top: -200px;
+
+  &__list {
+
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+
   }
 }

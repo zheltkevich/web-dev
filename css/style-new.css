@@ -380,10 +380,10 @@ body {
   -webkit-flex-flow: wrap;
       -ms-flex-flow: wrap;
           flex-flow: wrap;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   -webkit-box-pack: space-evenly;
   -webkit-justify-content: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -399,8 +399,9 @@ body {
 
 .clients__item {
   margin-bottom: 20px;
-  width: 90px;
-  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .clients__logo {

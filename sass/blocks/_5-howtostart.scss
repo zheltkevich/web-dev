@@ -1,14 +1,19 @@
 .howtostart {
+  margin-bottom: 40px;
 
   &__title {
+    margin-bottom: 30px;
   }
 
   &__text {
+    margin-bottom: 30px;
   }
 
   &__arrow {
+    display: none;
   }
 
   &__button {
+    margin-bottom: 20px;
   }
 }

@@ -1,15 +1,27 @@
+@import "../mixins";
+
 .footer {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   &__left-column {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   &__title {
+    @include h3;
   }
 
   &__mid-column {
+    padding-bottom: 20px;
   }
 
   &__right-column {
+    padding-bottom: 20px;
   }
 
   &__bottom-bar {
@@ -19,24 +31,36 @@
 .left-column {
 
   &__title {
+    margin-bottom: 20px;
   }
 
   &__text {
   }
 
+  &__links-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__link {
+    color: #D79B00;
   }
 }
 
 .mid-column {
 
   &__title {
+    margin-bottom: 20px;
   }
 
   &__list {
+    display: flex;
+    flex-flow: wrap;
   }
 
   &__item {
+    margin-right: 30px;
+    margin-bottom: 20px;
   }
 
   &__social-button {
@@ -49,12 +73,15 @@
 .right-column {
 
   &__title {
+    margin-bottom: 20px;
   }
 
   &__links {
+    display: flex;
   }
 
   &__list {
+    margin-right: 60px;
   }
 
   &__item {
@@ -66,6 +93,16 @@
 
 .bottom-bar {
 
+  &__link-privacy {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
   &__developer-link {
   }
 
@@ -73,11 +110,20 @@
   }
 
   &__copyright {
+    padding: 7px 0;
+    display: block;
+    height: 100%;
+    line-height: 1;
   }
 
   &__button-top {
-  }
+    font-size: 14px;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: none;
+    }
 
-  &__link-privacy {
-  }
 }

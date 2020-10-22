@@ -5,6 +5,7 @@
   }
 
   &__list {
+    margin-bottom: 30px;
   }
 
   &__item {
@@ -47,9 +48,10 @@
 
   &__more-link {
     color: #D79B00;
-    display: flex;
-    align-items: center;
+
     &::after {
+      display: inline-block;
+      margin-bottom: 1px;
       content: "";
       width: 20px;
       height: 8px;
@@ -61,16 +63,16 @@
   }
 
   &__site-link {
-    display: flex;
-    align-items: center;
+
     color: #D79B00;
     &::before {
+      display: inline-block;
       content: "";
       width: 16px;
       height: 12px;
       background-image: url(/img/icon-link.svg);
       background-repeat: no-repeat;
-      margin-right: 6px;
+      margin-right: 5px;
 
     }
   }

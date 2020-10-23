@@ -5,21 +5,37 @@
     margin-bottom: 30px;
   }
 
+  &__content-wrapper {
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
   &__text {
     font-size: 20px;
     margin-bottom: 30px;
-  }
 
-  &__arrow {
-    display: none;
+    @media (min-width: $desktop-width) {
+      flex-basis: 48%;
+    }
   }
 
   &__buttons-wrapper {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
+
     @media (min-width: $tablet-width) {
       flex-flow: row nowrap;
       justify-content: space-between;
+      
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 48%;
     }
   }
 

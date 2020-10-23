@@ -16,7 +16,6 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
-      width: 100%;
     }
   }
 
@@ -43,6 +42,9 @@
   &__navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px auto;
+    height: 50px;
 
   }
 
@@ -51,18 +53,19 @@
 }
 
 .main-navbar {
-  width: 100%;
+  min-width: 200px;
   background-color: #ffffff;
-  // position: relative;
-  padding: 10px 0;
-  // top: -200px;
+  display: none;
+
   @media (min-width: $tablet-width) {
-    // top: unset;
+    display: flex;
+    top: unset;
   }
 
   &__list {
     @media (min-width: $tablet-width) {
       display: flex;
+      align-items: center;
     }
 
   }

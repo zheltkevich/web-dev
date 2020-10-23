@@ -5,23 +5,41 @@
   background: #FFFFFF;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 
-  &__left-column {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
+
 
   &__title {
     @include h3;
   }
 
+  &__columns {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+
+  &__left-column {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+
+    }
+  }
+
   &__mid-column {
     padding-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      margin-left: 30px;
+    }
   }
 
   &__right-column {
     padding-bottom: 20px;
+    @media (min-width: $tablet-width) {
+    }
   }
 
   &__bottom-bar {
@@ -32,6 +50,7 @@
 
   &__title {
     margin-bottom: 20px;
+    min-width: max-content;
   }
 
   &__text {
@@ -40,14 +59,22 @@
   &__links-wrapper {
     display: flex;
     justify-content: space-between;
+    @media (min-width: $tablet-width) {
+      flex-flow: column;
+    }
   }
 
   &__link {
     color: #D79B00;
+
   }
 }
 
 .mid-column {
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+    max-width: 300px;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -56,11 +83,17 @@
   &__list {
     display: flex;
     flex-flow: wrap;
+    @media (min-width: $tablet-width) {
+      
+    }
   }
 
   &__item {
     margin-right: 30px;
     margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      
+    }
   }
 
   &__social-button {
@@ -71,17 +104,27 @@
 }
 
 .right-column {
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+  }
 
   &__title {
     margin-bottom: 20px;
+    min-width: max-content;
   }
 
   &__links {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__columns {
     display: flex;
   }
 
   &__list {
     margin-right: 60px;
+    min-width: max-content;
   }
 
   &__item {
@@ -89,19 +132,18 @@
 
   &__link {
   }
+
+  &__link-privacy {
+    margin-top: 10px;
+  }
 }
 
 .bottom-bar {
 
-
-  &__link-privacy {
-
-  }
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   &__developer-link {

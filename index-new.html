@@ -63,11 +63,10 @@
       <div class="first-screen__wrapper">
         <section class="first-screen__slogan slogan">
           <h1 class="slogan__title">
-            Разработка современных адаптивных сайтов
+            Разработка современных веб-инструментов
           </h1>
           <p class="slogan__description">
-            Привет, меня зовут Александр&nbsp;Желткевич.<br>
-            Делаю и&nbsp;обслуживаю адаптивные сайты с&nbsp;2018&nbsp;года.
+            Проектирую и запускаю современные адаптивные сайты и прогрессивные веб-приложения с 2018 года
           </p>
         </section>
   
@@ -215,9 +214,9 @@
           <img class="clients__logo" src="img/prime_logo.svg"
             alt="Компания по продаже и ремонту сотовой техники PRIME">
         </li>
-        <li class="clients__item">
+        <!-- <li class="clients__item">
           <img class="clients__logo" src="img/vegansters_logo.svg" alt="Блогеры-вегетарианцы Веганстеры">
-        </li>
+        </li> -->
       </ul>
     </section>
 
@@ -349,8 +348,10 @@
         Пройдите короткий опрос или&nbsp;свяжитесь со&nbsp;мной
       </p>
       <img class="howtostart__arrow" src="img/arrow.svg" alt="Стрелка">
-      <a class="howtostart__button button" href="#">Пройти опрос</a>
-      <a class="howtostart__button button" href="#">Перейти в контакты</a>
+      <div class="howtostart__buttons-wrapper">
+        <a class="howtostart__button button" href="#">Пройти опрос</a>
+        <a class="howtostart__button button" href="#">Перейти в контакты</a>
+      </div>
     </section>
 
   </main>
@@ -361,102 +362,106 @@
 
     <div class="container">
       <!-- Developer -->
-      <section class="footer__left-column left-column">
-        <h3 class="footer__title left-column__title">Разработка сайтов</h3>
-        <p class="left-column__text">Желткевич А.Е.</p>
-        <div class="left-column__links-wrapper">
-          <a class="left-column__link" href="mailto:hello@zheltkevich.online">hello@zheltkevich.online</a>
-          <a class="left-column__link" href="#">Задать вопрос</a>
-        </div>
-      </section>
-  
-      <!-- Social -->
-      <section class="footer__mid-column mid-column">
-        <h3 class="footer__title mid-column__title">Связь со мной</h3>
-        <ul class="mid-column__list">
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_phone.svg" alt="Позвонить">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_whatsapp.svg" alt="WhatsApp">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_instagram.svg" alt="Instagram">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_zen.svg" alt="Яндекс.Дзен">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_telegram.svg" alt="Telegram">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_vk.svg" alt="ВКонтакте">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_linkedin.svg" alt="LinkedIn">
-            </a>
-          </li>
-          <li class="mid-column__item">
-            <a class="mid-column__social-button" href="">
-              <img class="mid-column__image" src="img/icon_behance.svg" alt="Behance">
-            </a>
-          </li>
-        </ul>
-      </section>
-  
-      <!-- Links -->
-      <section class="footer__right-column right-column">
-        <h3 class="footer__title right-column__title">Полезные ссылки</h3>
-        <div class="right-column__links">
-          <ul class="right-column__list">
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Бриф</a>
+      <div class="footer__columns">
+        <section class="footer__left-column left-column">
+          <h3 class="footer__title left-column__title">Разработка сайтов</h3>
+          <p class="left-column__text">Желткевич А.Е.</p>
+          <div class="left-column__links-wrapper">
+            <a class="left-column__link" href="mailto:hello@zheltkevich.online">hello@zheltkevich.online</a>
+            <a class="left-column__link" href="#">Задать вопрос</a>
+          </div>
+        </section>
+    
+        <!-- Social -->
+        <section class="footer__mid-column mid-column">
+          <h3 class="footer__title mid-column__title">Связь со мной</h3>
+          <ul class="mid-column__list">
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_phone.svg" alt="Позвонить">
+              </a>
             </li>
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Опрос</a>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_whatsapp.svg" alt="WhatsApp">
+              </a>
             </li>
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">FAQ</a>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_instagram.svg" alt="Instagram">
+              </a>
             </li>
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Блог</a>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_zen.svg" alt="Яндекс.Дзен">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_telegram.svg" alt="Telegram">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_vk.svg" alt="ВКонтакте">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_linkedin.svg" alt="LinkedIn">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_behance.svg" alt="Behance">
+              </a>
             </li>
           </ul>
-          <ul class="right-column__list">
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Главная</a>
-            </li>
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Услуги и цены</a>
-            </li>
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Обо мне</a>
-            </li>
-            <li class="right-column__item">
-              <a class="right-column__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+    
+        <!-- Links -->
+        <section class="footer__right-column right-column">
+          <h3 class="footer__title right-column__title">Полезные ссылки</h3>
+          <div class="right-column__links">
+            <div class="right-column__columns">
+              <ul class="right-column__list">
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Бриф</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Опрос</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">FAQ</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Блог</a>
+                </li>
+              </ul>
+              <ul class="right-column__list">
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Главная</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Обо мне</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <a class="right-column__link-privacy" href="#">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </section>
+      </div>
   
       <!-- Bottom -->
       <section class="footer__bottom-bar bottom-bar">
-        <a class="bottom-bar__link-privacy" href="#">
-          Политика конфиденциальности
-        </a>
         <div class="bottom-bar__wrapper">
           <a class="bottom-bar__developer-link" href="index.html">
             <img class="bottom-bar__dev-mark" src="img/developer_mark.svg" alt="Разработчик Желткевич">

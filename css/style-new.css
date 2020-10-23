@@ -146,6 +146,12 @@ body {
 }
 
 @media (min-width: 768px) {
+  .header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
   .header__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -193,7 +199,6 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px auto;
   height: 50px;
 }
 
@@ -201,6 +206,7 @@ body {
   min-width: 200px;
   background-color: #ffffff;
   display: none;
+  height: 50px;
 }
 
 @media (min-width: 768px) {
@@ -210,6 +216,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     top: unset;
+    height: 60px;
   }
 }
 

@@ -19,6 +19,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -56,7 +57,7 @@
 
 .main-navbar {
   min-width: 200px;
-  background-color: #ffffff;
+  // background-color: #ffffff;
   display: none;
   height: 50px;
 

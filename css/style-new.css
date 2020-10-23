@@ -194,15 +194,9 @@ body {
 }
 
 .main-navbar {
-  position: relative;
+  width: 100%;
+  background-color: #ffffff;
   padding: 10px 0;
-  top: -200px;
-}
-
-@media (min-width: 768px) {
-  .main-navbar {
-    top: unset;
-  }
 }
 
 @media (min-width: 768px) {
@@ -214,10 +208,19 @@ body {
   }
 }
 
+.main-navbar__item {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .main-navbar__item {
     padding-left: 50px;
   }
+}
+
+.main-navbar__link {
+  color: #2d2d2d;
+  font-size: 20px;
 }
 
 .main__first-screen {
@@ -268,9 +271,11 @@ body {
   }
 }
 
-.slogan {
-  min-width: 320px;
-  max-width: 580px;
+@media (min-width: 768px) {
+  .slogan {
+    min-width: 320px;
+    max-width: 580px;
+  }
 }
 
 .slogan__title {
@@ -297,7 +302,10 @@ body {
 
 @media (min-width: 768px) {
   .quiz {
-    min-width: 240px;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    min-width: 200px;
     max-width: 360px;
     display: -webkit-box;
     display: -webkit-flex;

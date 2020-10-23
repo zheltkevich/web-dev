@@ -52,11 +52,13 @@
 }
 
 .main-navbar {
-  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  // position: relative;
   padding: 10px 0;
-  top: -200px;
+  // top: -200px;
   @media (min-width: $tablet-width) {
-    top: unset;
+    // top: unset;
   }
 
   &__list {
@@ -67,6 +69,7 @@
   }
 
   &__item {
+    display: block;
     @media (min-width: $tablet-width) {
       padding-left: 50px;
     }
@@ -74,6 +77,8 @@
   }
 
   &__link {
+    color: #2d2d2d;
+    font-size: 20px;
 
   }
 }

@@ -30,8 +30,11 @@
 }
 
 .slogan {
-  min-width: 320px;
-  max-width: 580px;
+  @media (min-width: $tablet-width) {
+    min-width: 320px;
+    max-width: 580px;
+  }
+
 
   &__title {
     color: #2d2d2d;
@@ -55,8 +58,8 @@
   border-radius: 10px;
   padding: 20px;
   @media (min-width: $tablet-width) {
-    // align-self: flex-start;
-    min-width: 240px;
+    align-self: flex-start;
+    min-width: 200px;
     max-width: 360px;
     display: flex;
     flex-flow: column nowrap;

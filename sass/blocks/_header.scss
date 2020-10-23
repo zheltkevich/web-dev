@@ -16,6 +16,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
+      width: 100%;
     }
   }
 
@@ -28,9 +29,6 @@
   }
 
   &__logo {
-    @media (min-width: $tablet-width) {
-      
-    }
 
   }
   
@@ -45,7 +43,7 @@
   &__navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 10px 0;
 
   }
 

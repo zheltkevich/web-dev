@@ -6,7 +6,7 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
-
+      justify-content: space-between;
     }
   }
 
@@ -30,6 +30,7 @@
 }
 
 .slogan {
+  min-width: 320px;
   max-width: 580px;
 
   &__title {
@@ -48,17 +49,18 @@
 
 .quiz {
   // width: 100%;
-  min-width: 300px;
-  max-width: 360px;
+
   background: #FFFFFF;
   box-shadow: -7px 7px 14px rgba(218, 218, 218, 0.2), 7px -7px 14px rgba(218, 218, 218, 0.2), -7px -7px 14px rgba(255, 255, 255, 0.9), 7px 7px 18px rgba(218, 218, 218, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(218, 218, 218, 0.5);
   border-radius: 10px;
   padding: 20px;
   @media (min-width: $tablet-width) {
     // align-self: flex-start;
-    width: 360px;
+    min-width: 240px;
+    max-width: 360px;
     display: flex;
     flex-flow: column nowrap;
+    flex-shrink: 1;
     justify-content: space-between;
     padding: 30px;
   }

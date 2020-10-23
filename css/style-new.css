@@ -190,7 +190,6 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
 }
 
 .main-navbar {

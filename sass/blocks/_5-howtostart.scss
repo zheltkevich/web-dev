@@ -26,7 +26,6 @@
   &__buttons-wrapper {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
 
     @media (min-width: $tablet-width) {
       flex-flow: row nowrap;
@@ -36,6 +35,7 @@
 
     @media (min-width: $desktop-width) {
       flex-basis: 48%;
+      align-items: center;
     }
   }
 

@@ -132,10 +132,18 @@
   }
 
   &__link {
+
+    &:hover {
+      color: #D79B00;
+    }
   }
 
   &__link-privacy {
     margin-top: 10px;
+
+    &:hover {
+      color: #D79B00;
+    }
   }
 }
 

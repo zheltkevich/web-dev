@@ -75,7 +75,7 @@
     margin-top: auto;
     margin-bottom: 0;
 
-    &::after {
+    &:hover::after {
       display: inline-block;
       margin-left: 7px;
       margin-bottom: 1px;

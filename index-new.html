@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/refresher.css">
   <link rel="stylesheet" href="css/style-new.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 </head>
 
 
@@ -67,7 +68,7 @@
               Разработка современных<br>веб-инструментов и&nbsp;сервисов
             </h1>
             <p class="slogan__description">
-              Проектирую и запускаю современные адаптивные сайты и&nbsp;прогрессивные веб-приложения с 2018 года
+              Проектирую и запускаю современные адаптивные сайты и&nbsp;прогрессивные веб-приложения с&nbsp;2018&nbsp;года
             </p>
           </section>
     
@@ -341,14 +342,14 @@
           Как начать работу
         </h2>
         <p class="section-title__description">
-          Хороший способ начать работу — это&nbsp;общение.
-          Расскажите о&nbsp;ваших задачах и&nbsp;я&nbsp;предложу варианты
+          Хороший способ начать работу —&nbsp;это&nbsp;общение.
+          Расскажите о&nbsp;ваших задачах и&nbsp;я&nbsp;предложу варианты.
         </p>
       </div>
       <div class="howtostart__content-wrapper">
         <p class="howtostart__text">
           Давайте познакомимся и&nbsp;детально обсудим ваш&nbsp;проект.
-          Пройдите короткий опрос или&nbsp;свяжитесь со&nbsp;мной
+          Пройдите короткий опрос или&nbsp;свяжитесь со&nbsp;мной.
         </p>
         <div class="howtostart__buttons-wrapper">
           <a class="howtostart__button button" href="#">Пройти опрос</a>
@@ -482,7 +483,35 @@
 
   </footer>
 
-
+  <script>
+    SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime    : 800,
+        // Размер шага в пикселях 
+        stepSize         : 75,
+    
+        // Дополнительные настройки:
+        
+        // Ускорение 
+        accelerationDelta : 30,  
+        // Максимальное ускорение
+        accelerationMax   : 2,   
+    
+        // Поддержка клавиатуры
+        keyboardSupport   : true,  
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll       : 50,
+    
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm   : true,
+        pulseScale       : 4,
+        pulseNormalize   : 1,
+    
+        // Поддержка тачпада
+        touchpadSupport   : true,
+    })
+    </script>
 </body>
 
 </html>

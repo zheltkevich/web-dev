@@ -71,7 +71,7 @@
   &__more-link {
     color: #D79B00;
 
-    &::after {
+    &:hover::after {
       display: inline-block;
       margin-bottom: 1px;
       content: "";

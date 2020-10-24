@@ -61,7 +61,8 @@ body {
   background-color: #f2f2f2;
 }
 
-.hidden {
+.hidden,
+.hidden:not(:focus):not(:active) {
   position: absolute;
   
   width: 1px;

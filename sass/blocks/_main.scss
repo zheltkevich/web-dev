@@ -2,6 +2,10 @@
 
   &__first-screen {
     margin-bottom: 50px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__works {

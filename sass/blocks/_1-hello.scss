@@ -2,6 +2,17 @@
 
 .first-screen {
 
+  &__vertical-wrapper {
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      height: 100vh;
+    }
+
+  }
+
   &__wrapper {
 
     @media (min-width: $tablet-width) {
@@ -14,7 +25,8 @@
     margin-top: 100px;
 
     @media (min-width: $desktop-width) {
-      margin-top: 150px;
+      // margin-top: 150px;
+      margin: 0;
     }
   }
 
@@ -27,7 +39,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 150px;
+      // margin-top: 150px;
+      margin: 0;
     }
 
   }

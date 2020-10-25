@@ -433,6 +433,12 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .first-screen__wrapper {
+    margin-top: 50px;
+  }
+}
+
 .first-screen__slogan {
   margin-top: 100px;
 }

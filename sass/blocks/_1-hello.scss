@@ -19,6 +19,10 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 50px;
+    }
   }
 
   &__slogan {

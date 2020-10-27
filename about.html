@@ -56,7 +56,147 @@
 
 
   <!-- MAIN -->
-  <main class="main">
+  <main class="about-main">
+
+    <h1 class="hidden">Обо мне</h1>
+
+    <section class="about-main__breadcrumbs breadcrumbs">
+      <h2 class="hidden">Навигация</h2>
+      <ul class="about-main__breadcrumbs-list">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="" class="breadcrumbs__link">Обо мне</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-main__hello hello">
+      <div class="hello__title section__title">
+        <h2 class="section-title__title">
+          Привет
+        </h2>
+        <p class="section-title__description">
+          С&nbsp;удовольствием вложу свою душу и&nbsp;время в&nbsp;интересный проект
+        </p>
+      </div>
+      <img src="img/avatar.png" alt="Мое фото" class="hello__avatar" width="150">
+      <p class="hello__name">Александр Желткевич</p>
+      <p class="hello__profession">
+        Веб-разработчик<br>
+        Веб-дизайнер
+      </p>
+      <p class="hello__description">
+        Меня зовут Александр.<br>
+        Я разрабатываю и обслуживаю сайты под ключ с 2018 года.
+        Делаю дизайн сайтов, логотипов, презентаций, упаковок, визиток и другой различной продукции.
+      </p>
+      <a href="#" class="hello__button button">Посмотреть контакты</a>
+      <ul class="hello__features">
+        <li class="hello__features-item hello__features-item--1">
+          <h3 class="hello__features-title">
+            Работаю с кодом:
+            HTML / CSS / JS
+          </h3>
+          <p class="hello__features-description">
+            При верстке сайтов использую код,
+            что позволяет существенно расширить стандартные возможности Тильды.
+          </p>
+        </li>
+        <li class="hello__features-item hello__features-item--2">
+          <h3 class="hello__features-title">
+            Настраиваю SEO
+          </h3>
+          <p class="hello__features-description">
+            Правильно настроенный сайт хорошо индексируется поисковыми системами
+            и быстрее попадает в ТОП поисковой выдачи.
+          </p>
+        </li>
+        <li class="hello__features-item hello__features-item--3">
+          <h3 class="hello__features-title">
+            Адаптирую
+            под мобильные
+          </h3>
+          <p class="hello__features-description">
+            Мобильная версия сайта выглядит
+            почти как приложение и позволяет клиентам удобней пользоваться ресурсом.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-main__contacts contacts">
+      <div class="about-main__title section__title">
+        <h2 class="section-title__title">
+          Контакты
+        </h2>
+        <p class="section-title__description">
+          Выбирайте удобный для вас способ связи, подписывайтесь на мои соц. сети и задавайте вопросы
+        </p>
+      </div>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          Телефон
+          <a class="contacts__phone" href="tel:79617150015">
+            +7 (961) 715 00 15
+          </a>
+        </li>
+        <li class="contacts__item">
+          Электропочта
+          <a class="contacts__mail" href="mailto:hello@zheltkevich.online">
+            hello@zheltkevich.online
+          </a>
+        </li>
+        <li class="contacts__item">
+          Мессенджеры
+          <a class="contacts__messengers" href="">
+            <img src="img/icon_whatsapp.svg" alt="WhatsApp">
+          </a>
+          <a class="contacts__messengers" href="">
+            <img src="img/icon_telegram.svg" alt="Telegram">
+          </a>
+        </li>
+        <li class="contacts__item">
+          Социальные сети
+          <a class="contacts__social" href="">
+            <img class="mid-column__image" src="img/icon_instagram.svg" alt="Instagram">
+          </a>
+          <a class="contacts__social" href="">
+            <img class="mid-column__image" src="img/icon_vk.svg" alt="ВКонтакте">
+          </a>
+          <a class="contacts__social" href="">
+            <img class="mid-column__image" src="img/icon_linkedin.svg" alt="LinkedIn">
+          </a>
+          <a class="contacts__social" href="">
+            <img class="mid-column__image" src="img/icon_behance.svg" alt="Behance">
+          </a>
+          <a class="contacts__social" href="">
+            <img class="mid-column__image" src="img/icon_zen.svg" alt="Яндекс.Дзен">
+          </a>
+        </li>
+      </ul>
+
+      <form class="contacts__askme-form askme-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="askme-form__item">
+          <label class="askme-form__input-title" for="askme-form__name">Имя</label>
+          <input id="askme-form__name" type="text" name="name" value="" placeholder="Введите имя">
+        </p>
+        <p class="askme-form__item">
+          <label class="askme-form__input-title" for="askme-form__phone">Телефон</label>
+          <input id="askme-form__phone" type="text" name="phone" value="" placeholder="Номер телефона">
+        </p>
+        <p class="askme-form__item">
+          <label class="askme-form__input-title" for="askme-form__mail">Почта</label>
+          <input id="askme-form__mail" type="text" name="mail" value="" placeholder="Введите почту">
+        </p>
+        <p class="askme-form__item">
+          <label class="askme-form__input-title" for="askme-form__text">Телефон</label>
+          <textarea name="text" id="askme-form__text" cols="30" rows="3" placeholder="Напишите вопрос здесь"></textarea>
+        <button class="askme-form__button button" type="submit">Отправить</button>
+      </form>
+
+    </section>
 
   </main>
 

@@ -65,7 +65,7 @@
   }
 
   &__link {
-    color: #D79B00;
+    color: $gold;
 
   }
 }
@@ -134,7 +134,7 @@
   &__link {
 
     &:hover {
-      color: #D79B00;
+      color: $gold;
     }
   }
 
@@ -142,7 +142,7 @@
     margin-top: 10px;
 
     &:hover {
-      color: #D79B00;
+      color: $gold;
     }
   }
 }

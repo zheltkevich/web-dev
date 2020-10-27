@@ -21,25 +21,9 @@
 
 @font-face {
   font-family: "PT Root UI";
-  src: url("../fonts/PT-Root-UI_Light.woff2");
-  src: local("☺"), url("../fonts/PT-Root-UI_Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Root UI";
   src: url("../fonts/PT-Root-UI_Medium.woff2");
-  src: local("☺"), url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
+  src: local(""), url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Root UI";
-  src: url("../fonts/PT-Root-UI_Regular.woff2");
-  src: local("☺"), url("../fonts/PT-Root-UI_Regular.woff2") format("woff2");
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -50,7 +34,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  color: #707070;
+  color: #444444;
   text-transform: none;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -87,7 +71,7 @@ body {
 }
 
 .text-gold {
-  color: #D79B00;
+  color: #966b00;
 }
 
 .text-bold {
@@ -114,7 +98,7 @@ body {
   background: -webkit-linear-gradient(315deg, #FFFFFF 0%, #EDEDED 100%);
   background: -o-linear-gradient(315deg, #FFFFFF 0%, #EDEDED 100%);
   background: linear-gradient(135deg, #FFFFFF 0%, #EDEDED 100%);
-  border: 2px solid #D79B00;
+  border: 2px solid #966b00;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: -5px 5px 10px rgba(214, 214, 214, 0.2), 5px -5px 10px rgba(214, 214, 214, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(214, 214, 214, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(214, 214, 214, 0.5);
@@ -125,7 +109,7 @@ body {
 
 .button:hover {
   color: #ffffff;
-  background: #D79B00;
+  background: #966b00;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -867,7 +851,7 @@ body {
 }
 
 .services-card__more-link {
-  color: #D79B00;
+  color: #966b00;
   width: 200px;
   margin-top: auto;
   margin-bottom: 0;
@@ -1048,7 +1032,7 @@ body {
 }
 
 .left-column__link {
-  color: #D79B00;
+  color: #966b00;
 }
 
 @media (min-width: 768px) {
@@ -1118,7 +1102,7 @@ body {
 }
 
 .right-column__link:hover {
-  color: #D79B00;
+  color: #966b00;
 }
 
 .right-column__link-privacy {
@@ -1126,7 +1110,7 @@ body {
 }
 
 .right-column__link-privacy:hover {
-  color: #D79B00;
+  color: #966b00;
 }
 
 .bottom-bar__wrapper {

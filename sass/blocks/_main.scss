@@ -1,7 +1,7 @@
 .main {
 
   &__first-screen {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
@@ -9,18 +9,18 @@
   }
 
   &__works {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   &__clients {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   &__services {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   &__howtostart {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 }

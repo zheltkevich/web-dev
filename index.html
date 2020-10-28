@@ -7,6 +7,8 @@
   <title>Разработка веб-сервисов</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="css/style.css" as="style">
+  <!-- <link rel="preload" href="/fonts/PT-Root-UI_Medium.woff2" as="font" type="font/woff2" crossorigin> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/refresher.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +26,7 @@
           <button class="header__mobile-navbar-toggler" type="button">
             <img class="header__burger-image" src="img/burger.svg" alt="Открыть меню">
           </button>
-          <a class="header__logo">
+          <a href="index.html" class="header__logo">
             <img class="header__logo-image" src="img/zh_logo.svg" width="36" height="28" alt="Логотип Желткевич">
           </a>
           <a href="tel:79617150015" class="header__callme">
@@ -34,19 +36,19 @@
         <nav class="header__main-navbar main-navbar main-navbar--closed">
           <ul class="main-navbar__list">
             <li class="main-navbar__item">
-              <a class="main-navbar__link" href="#">Работы</a>
+              <a class="main-navbar__link" href="works.html">Работы</a>
             </li>
             <li class="main-navbar__item">
-              <a class="main-navbar__link" href="#">Услуги и цены</a>
+              <a class="main-navbar__link" href="index.html#services">Услуги и цены</a>
             </li>
             <li class="main-navbar__item">
               <a class="main-navbar__link" href="about.html">Обо мне</a>
             </li>
             <li class="main-navbar__item">
-              <a class="main-navbar__link" href="#">FAQ</a>
+              <a class="main-navbar__link" href="faq.html">FAQ</a>
             </li>
             <li class="main-navbar__item">
-              <a class="main-navbar__link" href="#">Контакты</a>
+              <a class="main-navbar__link" href="about.html#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -225,7 +227,7 @@
     </section>
 
     <!-- Services -->
-    <section class="main__services services container">
+    <section class="main__services services container" id="services">
       <div class="services__title section-title">
         <h2 class="section-title__title">Услуги и цены</h2>
         <p class="section-title__description">

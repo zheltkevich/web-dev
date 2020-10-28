@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Разработка веб-сервисов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/refresher.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER  -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__mobile-navbar">
+          <button class="header__mobile-navbar-toggler" type="button">
+            <img class="header__burger-image" src="img/burger.svg" alt="Открыть меню">
+          </button>
+          <a href="index.html" class="header__logo">
+            <img class="header__logo-image" src="img/zh_logo.svg" width="36" height="28" alt="Логотип Желткевич">
+          </a>
+          <a href="tel:79617150015" class="header__callme">
+            <img class="header__callme-image" src="img/callme.svg" alt="Позвонить">
+          </a>
+        </div>
+        <nav class="header__main-navbar main-navbar main-navbar--closed">
+          <ul class="main-navbar__list">
+            <li class="main-navbar__item">
+              <a class="main-navbar__link" href="works.html">Работы</a>
+            </li>
+            <li class="main-navbar__item">
+              <a class="main-navbar__link" href="index.html#services">Услуги и цены</a>
+            </li>
+            <li class="main-navbar__item">
+              <a class="main-navbar__link" href="about.html">Обо мне</a>
+            </li>
+            <li class="main-navbar__item">
+              <a class="main-navbar__link" href="faq.html">FAQ</a>
+            </li>
+            <li class="main-navbar__item">
+              <a class="main-navbar__link" href="about.html#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="works-main">
+
+    <div class="works-main__title section-title">
+      <h1 class="section-title__title">Все работы</h1>
+      <p class="section-title__description">
+        Сайты, логотипы, дизайн-проекты, контент, полиграфия и т.д.
+      </p>
+    </div>
+
+    <section class="works-main__breadcrumbs breadcrumbs">
+      <h2 class="hidden">Навигация по сайту</h2>
+      <ul class="works-main__breadcrumbs-list">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="" class="breadcrumbs__link">Все работы</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="works-main__works-preview works-preview">
+
+      <h2 class="hidden">Список разделов</h2>
+      <nav class="works-preview__works-tabs works-tabs">
+        <a href="#sites" class="works-tabs__tab works-tabs__tab--active">Сайты</a>
+        <a href="#logos" class="works-tabs__tab works-tabs__tab--active">Логотипы</a>
+        <a class="works-tabs__tab works-tabs__tab--active">Контент</a>
+        <a class="works-tabs__tab works-tabs__tab--active">Разное</a>
+      </nav>
+      <div class="works-preview__works-content works-content">
+
+        <!-- Sites -->
+        <div class="works-content__block" id="sites">
+          <h2 class="works-content__section-title section-title__title">Сайты</h2>
+          <ul class="works-content__works-list">
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link" href="#">
+                <img class="works-card-small__image" src="img/work-1_preview.png" alt="Превью сайта granulir.ru">
+                <h3 class="works-card-small__title">Интернет-магазин производителя сухих строительных смесей GRANULIR
+                </h3>
+              </a>
+              <div class="works-card-small__links-wrapper">
+                <a class="works-card-small__more-link" href="#">Подробнее</a>
+                <a class="works-card-small__site-link" href="#">granulir.ru</a>
+              </div>
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link" href="#">
+                <img class="works-card-small__image" src="img/work-2_preview.png" alt="Превью сайта aidetail.ru">
+                <h3 class="works-card-small__title">Посадочная страница профессиональной студии детейлинга AiDetail</h3>
+              </a>
+              <div class="works-card-small__links-wrapper">
+                <a class="works-card-small__more-link" href="#">Подробнее</a>
+                <a class="works-card-small__site-link" href="#">aidetail.ru</a>
+              </div>
+            </li>
+          </ul>
+          <a href="" class="works-content__button button">Заказать работу</a>
+        </div>
+
+        <!-- Logos -->
+        <div class="works-content__block" id="logos">
+          <h2 class="works-content__section-title section-title__title">Логотипы</h2>
+          <ul class="works-content__works-list">
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link"></a>
+              <img class="works-card-small__image" src="img/sn_logo_preview.png" alt="Логотип">
+              <h3 class="works-card-small__title">Savelev Nails</h3>
+              <p class="works-card-small__description">
+                Академия по обучению ногтевому сервису
+              </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/rastsvetai_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Расцветай-ретрит</h3>
+                <p class="works-card-small__description">
+                  Авторская ретрит-программа омоложения души и тела
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/naturekitchen_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Nature Kitcheb</h3>
+                <p class="works-card-small__description">
+                  Доставка готовых блюд здорового питания
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/granulir_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Granulir</h3>
+                <p class="works-card-small__description">
+                  Производитель экологичных строительных смесей
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/aidetail_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">AiDetail</h3>
+                <p class="works-card-small__description">
+                  Профессиональная детейлинг-студия в городе Кемерово
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/freedom_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Фридом</h3>
+                <p class="works-card-small__description">
+                  Пеностекло и сопутствующие материалы по ценам изготовителя
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/valery_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Valery</h3>
+                <p class="works-card-small__description">
+                  Студия наращивания ресниц и художественного оформления бровей
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/ecokupeli_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Эко Купели</h3>
+                <p class="works-card-small__description">
+                  Производство экологичных купелей по индивидуальным проектам
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/zdes_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Здесь</h3>
+                <p class="works-card-small__description">
+                  Авторский бар в центре Петербурга со вкусной едой и крафтовыми напитками
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/sinica_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Sinica</h3>
+                <p class="works-card-small__description">
+                  Студия производства рекламы и контента для бизнеса
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/vegansters_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Vegansters</h3>
+                <p class="works-card-small__description">
+                  Логотип для ютуб-блогеров вегетарианцев
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+            <li class="works-content__works-card-small works-card-small">
+              <a class="works-card-small__view-link">
+                <img class="works-card-small__image" src="img/jakobfilms_logo_preview.png" alt="Логотип">
+                <h3 class="works-card-small__title">Jakob Films</h3>
+                <p class="works-card-small__description">
+                  Производство видеороликов для бизнеса
+                </p>
+              </a>
+              <!-- <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div> -->
+            </li>
+          </ul>
+          <a href="" class="works-content__button button">Заказать работу</a>
+        </div>
+
+        <!-- Content -->
+        <!-- <div class="works-content__block" id="content">
+            <h2 class="works-content__section-title section-title__title">Контент</h2>
+            <ul class="works-content__works-list">
+              <li class="works-content__works-card-small works-card-small">
+                <a class="works-card-small__view-link"></a>
+                  <img class="works-card-small__image" src="" alt="Логотип">
+                  <h3 class="works-card-small__title">Title</h3>
+                  <p class="works-card-small__description">
+                    Description
+                  </p>
+                </a>
+                <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="works-content__button button">Заказать работу</a>
+          </div> -->
+
+        <!-- Other -->
+        <!-- <div class="works-content__block" id="other">
+            <h2 class="works-content__section-title section-title__title">Разное</h2>
+            <ul class="works-content__works-list">
+              <li class="works-content__works-card-small works-card-small">
+                <a class="works-card-small__view-link"></a>
+                  <img class="works-card-small__image" src="" alt="Логотип">
+                  <h3 class="works-card-small__title">Title</h3>
+                  <p class="works-card-small__description">
+                    Description
+                  </p>
+                </a>
+                <div class="works-card-small__links-wrapper">
+                  <a class="works-card-small__more-link" href="#">More</a>
+                  <a class="works-card-small__site-link" href="#">Link to site</a>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="works-content__button button">Заказать работу</a>
+          </div> -->
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+      <!-- Developer -->
+      <div class="footer__columns">
+        <section class="footer__left-column left-column">
+          <h3 class="footer__title left-column__title">Разработка сайтов</h3>
+          <p class="left-column__text">Желткевич А.Е.</p>
+          <div class="left-column__links-wrapper">
+            <a class="left-column__link" href="mailto:hello@zheltkevich.online">hello@zheltkevich.online</a>
+            <a class="left-column__link" href="#">Задать вопрос</a>
+          </div>
+        </section>
+
+        <!-- Social -->
+        <section class="footer__mid-column mid-column">
+          <h3 class="footer__title mid-column__title">Связь со мной</h3>
+          <ul class="mid-column__list">
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_phone.svg" alt="Позвонить">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_whatsapp.svg" alt="WhatsApp">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_instagram.svg" alt="Instagram">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_zen.svg" alt="Яндекс.Дзен">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_telegram.svg" alt="Telegram">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_vk.svg" alt="ВКонтакте">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_linkedin.svg" alt="LinkedIn">
+              </a>
+            </li>
+            <li class="mid-column__item">
+              <a class="mid-column__social-button" href="">
+                <img class="mid-column__image" src="img/icon_behance.svg" alt="Behance">
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Links -->
+        <section class="footer__right-column right-column">
+          <h3 class="footer__title right-column__title">Полезные ссылки</h3>
+          <div class="right-column__links">
+            <div class="right-column__columns">
+              <ul class="right-column__list">
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Бриф</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Опрос</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">FAQ</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Блог</a>
+                </li>
+              </ul>
+              <ul class="right-column__list">
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Главная</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Обо мне</a>
+                </li>
+                <li class="right-column__item">
+                  <a class="right-column__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <a class="right-column__link-privacy" href="#">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Bottom -->
+      <section class="footer__bottom-bar bottom-bar">
+        <div class="bottom-bar__wrapper">
+          <a class="bottom-bar__developer-link" href="index.html">
+            <img class="bottom-bar__dev-mark" src="img/developer_mark.svg" alt="Разработчик Желткевич">
+          </a>
+          <p class="bottom-bar__copyright">
+            © 2018—2020
+          </p>
+          <button class="bottom-bar__button-top button" type="button">
+            Наверх
+          </button>
+        </div>
+
+      </section>
+    </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script>
+    SmoothScroll({
+      // Время скролла 400 = 0.4 секунды
+      animationTime: 800,
+      // Размер шага в пикселях 
+      stepSize: 75,
+
+      // Дополнительные настройки:
+
+      // Ускорение 
+      accelerationDelta: 30,
+      // Максимальное ускорение
+      accelerationMax: 2,
+
+      // Поддержка клавиатуры
+      keyboardSupport: true,
+      // Шаг скролла стрелками на клавиатуре в пикселях
+      arrowScroll: 50,
+
+      // Pulse (less tweakable)
+      // ratio of "tail" to "acceleration"
+      pulseAlgorithm: true,
+      pulseScale: 4,
+      pulseNormalize: 1,
+
+      // Поддержка тачпада
+      touchpadSupport: true,
+    })
+  </script>
+</body>
+
+</html>

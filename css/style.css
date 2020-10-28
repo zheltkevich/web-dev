@@ -688,7 +688,7 @@ body {
 }
 
 .works-card__more-link {
-  color: #D79B00;
+  color: #966b00;
 }
 
 .works-card__more-link:hover::after {
@@ -703,7 +703,7 @@ body {
 }
 
 .works-card__site-link {
-  color: #D79B00;
+  color: #966b00;
 }
 
 .works-card__site-link::before {
@@ -1143,4 +1143,20 @@ body {
   background: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.about-main__breadcrumbs {
+  margin-bottom: 80px;
+}
+
+.about-main__breadcrumbs-list {
+  margin-bottom: 80px;
+}
+
+.about-main__hello {
+  margin-bottom: 80px;
+}
+
+.about-main__contacts {
+  margin-bottom: 80px;
 }

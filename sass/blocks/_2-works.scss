@@ -1,4 +1,5 @@
 @import "../mixins";
+@import "../vars";
 
 .works {
 
@@ -69,7 +70,7 @@
   }
 
   &__more-link {
-    color: #D79B00;
+    color: $gold;
 
     &:hover::after {
       display: inline-block;
@@ -86,7 +87,7 @@
 
   &__site-link {
 
-    color: #D79B00;
+    color: $gold;
     &::before {
       display: inline-block;
       content: "";

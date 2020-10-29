@@ -8,17 +8,31 @@
     margin-bottom: 30px;
   }
 
+  &__wrapper {
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__about {
 
+    @media (min-width: $tablet-width) {
+      width: 40%;
+    }
   }
 
   &__features {
+
+    @media (min-width: $tablet-width) {
+      width: 55%;
+    }
   }
 }
 
 
 .hello-about {
-
 
   &__avatar {
     border-radius: 10px;
@@ -62,12 +76,16 @@
   &__item {
     margin-bottom: 30px;
 
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
 
     &:nth-child(1)::before {
-
       display: block;
       content: "";
       width: 80px;
@@ -76,10 +94,21 @@
       background-size: cover;
       background-repeat: no-repeat;
       margin-bottom: 12px;
+
+      @media (min-width: $tablet-width) {
+        min-width: 50px;
+        min-height: 50px;
+        margin-right: 20px;
+        flex-grow: 1;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-width: 100px;
+        min-height: 100px;
+      }
     }
 
     &:nth-child(2)::before {
-
       display: block;
       content: "";
       width: 80px;
@@ -88,6 +117,16 @@
       background-size: cover;
       background-repeat: no-repeat;
       margin-bottom: 12px;
+
+      @media (min-width: $tablet-width) {
+        min-width: 50px;
+        min-height: 50px;
+        margin-right: 20px;
+      }
+      @media (min-width: $desktop-width) {
+        min-width: 100px;
+        min-height: 100px;
+      }
     }
 
     &:nth-child(3)::before {
@@ -99,6 +138,24 @@
       background-size: cover;
       background-repeat: no-repeat;
       margin-bottom: 12px;
+
+      @media (min-width: $tablet-width) {
+        min-width: 50px;
+        min-height: 50px;
+        margin-right: 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-width: 100px;
+        min-height: 100px;
+      }
+    }
+  }
+
+  &__wrapper {
+
+    @media (min-width: $desktop-width) {
+      flex-flow: column nowrap;
     }
   }
 
@@ -109,6 +166,5 @@
   }
 
   &__description {
-
   }
 }

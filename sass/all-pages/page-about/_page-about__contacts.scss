@@ -17,7 +17,10 @@
   }
 
   &__list {
-    width: 40%;
+
+    @media (min-width: $tablet-width) {
+      width: 40%;
+    }
   }
 
   &__item {
@@ -49,7 +52,9 @@
   }
 
   &__askme-form {
-    width: 55%;
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
   }
 }
 

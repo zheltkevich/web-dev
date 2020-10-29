@@ -562,7 +562,7 @@ body {
 
 @media (min-width: 1200px) {
   .section-title__title {
-    max-width: 48%;
+    width: 50%;
   }
 }
 
@@ -573,7 +573,7 @@ body {
 
 @media (min-width: 1200px) {
   .section-title__description {
-    max-width: 55%;
+    width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1401,7 +1401,7 @@ body {
 }
 
 .about-main__breadcrumbs {
-  margin-top: 80px;
+  margin-top: 120px;
   margin-bottom: 20px;
 }
 
@@ -1438,7 +1438,7 @@ body {
 
 @media (min-width: 768px) {
   .hello__features {
-    width: 55%;
+    width: 50%;
   }
 }
 
@@ -1516,20 +1516,9 @@ body {
 
 @media (min-width: 768px) {
   .hello-features__item:nth-child(1)::before {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 80px;
+    min-height: 80px;
     margin-right: 20px;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hello-features__item:nth-child(1)::before {
-    min-width: 100px;
-    min-height: 100px;
   }
 }
 
@@ -1547,16 +1536,9 @@ body {
 
 @media (min-width: 768px) {
   .hello-features__item:nth-child(2)::before {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 80px;
+    min-height: 80px;
     margin-right: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hello-features__item:nth-child(2)::before {
-    min-width: 100px;
-    min-height: 100px;
   }
 }
 
@@ -1574,16 +1556,9 @@ body {
 
 @media (min-width: 768px) {
   .hello-features__item:nth-child(3)::before {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 80px;
+    min-height: 80px;
     margin-right: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hello-features__item:nth-child(3)::before {
-    min-width: 100px;
-    min-height: 100px;
   }
 }
 
@@ -1620,8 +1595,10 @@ body {
   }
 }
 
-.contacts__list {
-  width: 40%;
+@media (min-width: 768px) {
+  .contacts__list {
+    width: 40%;
+  }
 }
 
 .contacts__item {
@@ -1648,8 +1625,10 @@ body {
   margin-right: 12px;
 }
 
-.contacts__askme-form {
-  width: 55%;
+@media (min-width: 768px) {
+  .contacts__askme-form {
+    width: 50%;
+  }
 }
 
 .askme-form__heading {

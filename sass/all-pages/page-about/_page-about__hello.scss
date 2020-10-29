@@ -1,0 +1,114 @@
+@import "../vars";
+@import "../mixins";
+
+
+.hello {
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__about {
+
+  }
+
+  &__features {
+  }
+}
+
+
+.hello-about {
+
+
+  &__avatar {
+    border-radius: 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+  &__myself {
+    margin-left: 12px;
+  }
+
+  &__name {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 12px;
+  }
+
+  &__profession {
+    display: block;
+
+  }
+
+  &__description {
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+
+.hello-features {
+
+  &__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(1)::before {
+
+      display: block;
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-image: url(/img/feature-1.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 12px;
+    }
+
+    &:nth-child(2)::before {
+
+      display: block;
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-image: url(/img/feature-2.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 12px;
+    }
+
+    &:nth-child(3)::before {
+      display: block;
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-image: url(/img/feature-3.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  &__description {
+
+  }
+}

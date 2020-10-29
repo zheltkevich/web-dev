@@ -1,4 +1,5 @@
-@import "../vars";
+@import "./vars";
+@import "./mixins";
 
 .header {
   position: fixed;
@@ -123,6 +124,11 @@
 
   &__link {
     color: #2d2d2d;
+
+    &:hover,
+    &:active {
+      color: $gold;
+    }
   }
 }
 

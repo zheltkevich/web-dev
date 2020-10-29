@@ -1,3 +1,6 @@
+@import "./vars";
+@import "./mixins";
+
 .main {
 
   &__first-screen {
@@ -24,3 +27,9 @@
     margin-bottom: 80px;
   }
 }
+
+@import "./page-main/page-main__first-screen";
+@import "./page-main/page-main__works";
+@import "./page-main/page-main__clients";
+@import "./page-main/page-main__services";
+@import "./page-main/page-main__howtostart";

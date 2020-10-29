@@ -1,4 +1,5 @@
 @import "../vars";
+@import "../mixins";
 
 .first-screen {
 
@@ -18,6 +19,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
+      margin-top: 50px;
     }
 
     @media (min-width: $desktop-width) {

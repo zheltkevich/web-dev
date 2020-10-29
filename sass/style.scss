@@ -1,4 +1,11 @@
-@import "../sass/global";
+@import "./normalize";
+@import "./refresher";
+@import "./all-pages/global";
 
-@import "../sass/page-main";
-@import "../sass/page-about";
+@import "./all-pages/blocks/section-title";
+@import "./all-pages/blocks/breadcrumbs";
+
+@import "./all-pages/header";
+@import "./all-pages/page-main__main";
+@import "./all-pages/page-about__main";
+@import "./all-pages/footer";

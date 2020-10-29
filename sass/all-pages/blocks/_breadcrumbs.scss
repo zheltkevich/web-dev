@@ -1,0 +1,35 @@
+@import "../vars";
+@import "../mixins";
+
+
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+
+    &::before {
+      content: ">";
+      color: #a0a0a0;
+      margin-left: 4px;
+    }
+
+    &:nth-child(1)::before {
+      content: none;
+    }
+  }
+
+  &__link {
+
+    &--active {
+      color: $gold;
+    }
+
+    &:hover,
+    &:focus {
+      color: $gold;
+    }
+  }
+}

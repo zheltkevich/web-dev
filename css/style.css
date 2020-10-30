@@ -1835,7 +1835,7 @@ body {
   color: #966b00;
 }
 
-.bottom-bar__wrapper {
+.bottom-bar {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

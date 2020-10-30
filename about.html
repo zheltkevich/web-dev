@@ -199,20 +199,20 @@
           <form class="contacts__askme-form askme-form" action="https://echo.htmlacademy.ru" method="post">
             <h3 class="askme-form__heading">Задайте мне вопрос</h3>
             <p class="askme-form__item">
-              <label class="askme-form__input-title" for="askme-form__name"><span class="hidden">Имя</span></label>
-              <input class="askme-form__input id="askme-form__name" type="text" name="name" value="" placeholder="Введите имя">
+              <label class="hidden" for="askme-form__name">Имя</label>
+              <input class="askme-form__input" id="askme-form__name" type="text" name="name" value="" placeholder="Введите имя">
             </p>
             <p class="askme-form__item">
-              <label class="askme-form__input-title" for="askme-form__phone"><span class="hidden">Телефон</span></label>
-              <input class="askme-form__input id="askme-form__phone" type="text" name="phone" value="" placeholder="Номер телефона">
+              <label class="hidden" for="askme-form__phone">Телефон</label>
+              <input class="askme-form__input" id="askme-form__phone" type="tel" name="phone" value="" placeholder="Номер телефона">
             </p>
             <p class="askme-form__item">
-              <label class="askme-form__input-title" for="askme-form__mail"><span class="hidden">Почта</span></label>
-              <input class="askme-form__input id="askme-form__mail" type="email" name="email" value="" placeholder="Введите почту">
+              <label class="hidden" for="askme-form__mail">Почта</label>
+              <input class="askme-form__input" id="askme-form__mail" type="email" name="email" value="" placeholder="Введите почту">
             </p>
             <p class="askme-form__item">
-              <label class="askme-form__input-title" for="askme-form__text"><span class="hidden">Ваш вопрос</span></label>
-              <textarea class="askme-form__input" name="text" id="askme-form__text" cols="30" rows="3" placeholder="Напишите вопрос здесь"></textarea>
+              <label class="hidden" for="askme-form__text">Ваш вопрос</label>
+              <textarea class="askme-form__input" id="askme-form__text" name="text" cols="30" rows="3" placeholder="Напишите вопрос здесь"></textarea>
             <button class="askme-form__button button" type="submit">Отправить вопрос</button>
           </form>
         </div>
@@ -327,8 +327,7 @@
       </div>
   
       <!-- Bottom -->
-      <section class="footer__bottom-bar bottom-bar">
-        <div class="bottom-bar__wrapper">
+        <div class="bottom-bar">
           <a class="bottom-bar__developer-link" href="index.html">
             <img class="bottom-bar__dev-mark" src="img/developer_mark.svg" alt="Разработчик Желткевич">
           </a>
@@ -340,7 +339,6 @@
           </button>
         </div>
 
-      </section>
     </div>
 
   </footer>

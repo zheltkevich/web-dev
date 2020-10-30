@@ -3,19 +3,46 @@
 
 .faq-accordeon {
 
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    padding-bottom: 20px;
+    flex-basis: 48%;
+    // flex-shrink: 0;
+
+  }
+
   &__link {
-    background-color: #eee;
-    color: #444;
+    display: flex;
+    justify-content: space-between;
+    background-color: unset;
+    color: #2d2d2d;
+    line-height: 26px;
+    font-size: 20px;
     cursor: pointer;
-    padding: 18px;
+    padding-bottom: 4px;
+    // padding-top: 20px;
     width: 100%;
     text-align: left;
     border: none;
+    border-bottom: 1px solid $gold;
     outline: none;
     transition: 0.4s;
 
     &:hover {
-      background-color: #ccc;
+      // background-color: #cccccc;
     }
 
     &:focus {
@@ -23,28 +50,45 @@
     }
 
     &::after {
-      content: '\02795';
-      /* Unicode character for "plus" sign (+) */
-      font-size: 13px;
-      color: #777;
+      align-self: center;
+      content: "◄";
+      color: $gold;
+      font-size: 16px;
+      font-weight: 700;
       float: right;
+      margin-top: 3px;
       margin-left: 5px;
+      transition: 0.2s;
     }
 
     &--active {
-      background-color: #ccc;
-
+      
       &::after {
-        content: "\2796";
+        display: block;
+        content: "◄";
+        font-size: 16px;
+        font-weight: 700;
+        color: $gold;
+        transition: 0.2s;
+        transform: rotate(-90deg);
       }
     }
   }
 
   &__content {
-    padding: 0 18px;
-    background-color: white;
+    display: block;
+    padding: 0 12px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
     max-height: 0;
-    // overflow: hidden;
+    overflow: hidden;
     transition: max-height 0.2s ease-in-out;
+  }
+
+  &__text {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $gold;
   }
 }

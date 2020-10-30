@@ -353,9 +353,9 @@ template {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 html,
@@ -613,22 +613,60 @@ body {
   color: #966b00;
 }
 
+.faq-accordeon__title {
+  margin-bottom: 20px;
+}
+
+.faq-accordeon__list {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .faq-accordeon__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.faq-accordeon__item {
+  padding-bottom: 20px;
+  -webkit-flex-basis: 48%;
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%;
+}
+
 .faq-accordeon__link {
-  background-color: #eee;
-  color: #444;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: unset;
+  color: #2d2d2d;
+  line-height: 26px;
+  font-size: 20px;
   cursor: pointer;
-  padding: 18px;
+  padding-bottom: 4px;
   width: 100%;
   text-align: left;
   border: none;
+  border-bottom: 1px solid #966b00;
   outline: none;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-}
-
-.faq-accordeon__link:hover {
-  background-color: #ccc;
 }
 
 .faq-accordeon__link:focus {
@@ -638,29 +676,54 @@ body {
 }
 
 .faq-accordeon__link::after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  content: "◄";
+  color: #966b00;
+  font-size: 16px;
+  font-weight: 700;
   float: right;
+  margin-top: 3px;
   margin-left: 5px;
-}
-
-.faq-accordeon__link--active {
-  background-color: #ccc;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .faq-accordeon__link--active::after {
-  content: "\2796";
+  display: block;
+  content: "◄";
+  font-size: 16px;
+  font-weight: 700;
+  color: #966b00;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .faq-accordeon__content {
-  padding: 0 18px;
-  background-color: white;
+  display: block;
+  padding: 0 12px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
+          box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
   max-height: 0;
+  overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in-out;
   -o-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
+}
+
+.faq-accordeon__text {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #966b00;
 }
 
 .header {
@@ -1728,7 +1791,7 @@ body {
 }
 
 .faq-main__breadcrumbs {
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 

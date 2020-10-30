@@ -37,7 +37,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      flex-basis: 48%;
+      flex-basis: 50%;
       align-items: center;
     }
   }
@@ -46,8 +46,7 @@
     margin-bottom: 20px;
     @media (min-width: $tablet-width) {
      flex-grow: 0;
-     flex-basis: 48%;
-    //  width: 300px;
+     flex-basis: 47%;
     }
     
   }

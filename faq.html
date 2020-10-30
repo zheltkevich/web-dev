@@ -59,41 +59,60 @@
   <main class="faq-main">
     <h1 class="hidden">Ответы на вопросы</h1>
 
-    <section class="faq-main__breadcrumbs breadcrumbs">
-      <h2 class="hidden">Навигация по сайту</h2>
-      <ul class="faq-main__breadcrumbs-list">
-        <li class="breadcrumbs__item">
-          <a href="index.html" class="breadcrumbs__link">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Вопрос / Ответ</a>
-        </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section class="faq-main__breadcrumbs breadcrumbs">
+        <h2 class="hidden">Навигация по сайту</h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Вопрос / Ответ</a>
+          </li>
+        </ul>
+      </section>
+    </div>
 
-    <section class="faq-main__questions questions">
-      <div class="questions__title section-title">
-        <h2 class="questions-title__title">Все работы</h2>
-        <p class="questions-title__description">
-          Сайты, логотипы, дизайн-проекты, контент, полиграфия и т.д.
-        </p>
-      </div>
-      <ul class="questions__list">
-        <li class="questions__item">
-          <a href="" class="questions__link">Вопрос №1</a>
-        </li>
-        <li class="questions__item">
-          <a href="" class="questions__link">Вопрос №2</a>
-        </li>
-        <li class="questions__item">
-          <a href="" class="questions__link">Вопрос №3</a>
-        </li>
-        <li class="questions__item">
-          <a href="" class="questions__link">Вопрос №4</a>
-        </li>
-      </ul>
-    </section>
-    
+    <div class="container">
+      <section class="faq-main__faq-accordeon faq-accordeon">
+        <div class="faq-accordeon__title section-title">
+          <h2 class="section-title__title">Вопрос / Ответ</h2>
+          <p class="section-title__description">
+            Ответы на частозадаваемые вопросы
+          </p>
+        </div>
+        <ul class="faq-accordeon__list">
+          <li class="faq-accordeon__item">
+            <button class="faq-accordeon__link" type="button">Вопрос №1</button>
+            <p class="faq-accordeon__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quidem adipisci quo at aliquid, distinctio quasi.
+            </p>
+          </li>
+          <li class="faq-accordeon__item">
+            <button class="faq-accordeon__link" type="button">Вопрос №2</button>
+            <p class="faq-accordeon__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quidem adipisci quo at aliquid, distinctio quasi.
+            </p>
+          </li>
+          <li class="faq-accordeon__item">
+            <button class="faq-accordeon__link" type="button">Вопрос №3</button>
+            <p class="faq-accordeon__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quidem adipisci quo at aliquid, distinctio quasi.
+            </p>
+          </li>
+          <li class="faq-accordeon__item">
+            <button class="faq-accordeon__link" type="button">Вопрос №4</button>
+            <p class="faq-accordeon__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quidem adipisci quo at aliquid, distinctio quasi.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
 
   </main>
 
@@ -112,7 +131,7 @@
             <a class="left-column__link" href="#">Задать вопрос</a>
           </div>
         </section>
-    
+
         <!-- Social -->
         <section class="footer__mid-column mid-column">
           <h3 class="footer__title mid-column__title">Связь со мной</h3>
@@ -159,7 +178,7 @@
             </li>
           </ul>
         </section>
-    
+
         <!-- Links -->
         <section class="footer__right-column right-column">
           <h3 class="footer__title right-column__title">Полезные ссылки</h3>
@@ -200,54 +219,57 @@
           </div>
         </section>
       </div>
-  
+
       <!-- Bottom -->
-        <div class="bottom-bar">
-          <a class="bottom-bar__developer-link" href="index.html">
-            <img class="bottom-bar__dev-mark" src="img/developer_mark.svg" alt="Разработчик Желткевич">
-          </a>
-          <p class="bottom-bar__copyright">
-            © 2018—2020
-          </p>
-          <button class="bottom-bar__button-top button" type="button">
-            Наверх
-          </button>
-        </div>
+      <div class="bottom-bar">
+        <a class="bottom-bar__developer-link" href="index.html">
+          <img class="bottom-bar__dev-mark" src="img/developer_mark.svg" alt="Разработчик Желткевич">
+        </a>
+        <p class="bottom-bar__copyright">
+          © 2018—2020
+        </p>
+        <button class="bottom-bar__button-top button" type="button">
+          Наверх
+        </button>
+      </div>
 
     </div>
 
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
   <script>
     SmoothScroll({
-        // Время скролла 400 = 0.4 секунды
-        animationTime    : 800,
-        // Размер шага в пикселях 
-        stepSize         : 75,
-    
-        // Дополнительные настройки:
-        
-        // Ускорение 
-        accelerationDelta : 30,  
-        // Максимальное ускорение
-        accelerationMax   : 2,   
-    
-        // Поддержка клавиатуры
-        keyboardSupport   : true,  
-        // Шаг скролла стрелками на клавиатуре в пикселях
-        arrowScroll       : 50,
-    
-        // Pulse (less tweakable)
-        // ratio of "tail" to "acceleration"
-        pulseAlgorithm   : true,
-        pulseScale       : 4,
-        pulseNormalize   : 1,
-    
-        // Поддержка тачпада
-        touchpadSupport   : true,
+      // Время скролла 400 = 0.4 секунды
+      animationTime: 800,
+      // Размер шага в пикселях 
+      stepSize: 75,
+
+      // Дополнительные настройки:
+
+      // Ускорение 
+      accelerationDelta: 30,
+      // Максимальное ускорение
+      accelerationMax: 2,
+
+      // Поддержка клавиатуры
+      keyboardSupport: true,
+      // Шаг скролла стрелками на клавиатуре в пикселях
+      arrowScroll: 50,
+
+      // Pulse (less tweakable)
+      // ratio of "tail" to "acceleration"
+      pulseAlgorithm: true,
+      pulseScale: 4,
+      pulseNormalize: 1,
+
+      // Поддержка тачпада
+      touchpadSupport: true,
     })
-    </script>
+  </script>
 </body>
 
 </html>

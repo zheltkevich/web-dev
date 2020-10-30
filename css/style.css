@@ -1145,7 +1145,7 @@ body {
   content: "";
   width: 20px;
   height: 8px;
-  background-image: url(/img/arrow-small.svg);
+  background-image: url(../img/arrow-small.svg);
   background-repeat: no-repeat;
   margin-left: 6px;
 }
@@ -1159,7 +1159,7 @@ body {
   content: "";
   width: 16px;
   height: 12px;
-  background-image: url(/img/icon-link.svg);
+  background-image: url(../img/icon-link.svg);
   background-repeat: no-repeat;
   margin-right: 5px;
 }
@@ -1288,7 +1288,7 @@ body {
   content: "";
   width: 200px;
   height: 2px;
-  background-image: url(/img/separator.svg);
+  background-image: url(../img/separator.svg);
   background-repeat: no-repeat;
   position: relative;
   top: -5px;
@@ -1312,7 +1312,7 @@ body {
   content: "";
   width: 20px;
   height: 8px;
-  background-image: url(/img/arrow-small.svg);
+  background-image: url(../img/arrow-small.svg);
   background-repeat: no-repeat;
 }
 
@@ -1507,7 +1507,7 @@ body {
   content: "";
   width: 80px;
   height: 80px;
-  background-image: url(/img/feature-1.svg);
+  background-image: url(../img/feature-1.svg);
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
@@ -1527,7 +1527,7 @@ body {
   content: "";
   width: 80px;
   height: 80px;
-  background-image: url(/img/feature-2.svg);
+  background-image: url(../img/feature-2.svg);
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
@@ -1547,7 +1547,7 @@ body {
   content: "";
   width: 80px;
   height: 80px;
-  background-image: url(/img/feature-3.svg);
+  background-image: url(../img/feature-3.svg);
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;

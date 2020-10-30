@@ -4,6 +4,10 @@
 
 .faq-main {
 
+  @media (min-width: $tablet-width) {
+    min-height: 60vh;
+  }
+
   &__breadcrumbs {
     margin-top: 100px;
     margin-bottom: 20px;

@@ -3,25 +3,30 @@
 
 .faq-accordeon {
 
+  &__columns {
+    
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
   &__title {
     margin-bottom: 20px;
   }
 
   &__list {
-    margin-bottom: 60px;
 
     @media (min-width: $tablet-width) {
       display: flex;
-      flex-flow: wrap;
-      justify-content: space-between;
+      flex-flow: row wrap;
+      flex-basis: 48%;
     }
   }
 
   &__item {
     padding-bottom: 20px;
-    flex-basis: 48%;
-    // flex-shrink: 0;
-
   }
 
   &__link {

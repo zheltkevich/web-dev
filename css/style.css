@@ -596,7 +596,7 @@ body {
 }
 
 .breadcrumbs__item::before {
-  content: ">";
+  content: "/";
   color: #a0a0a0;
   margin-left: 4px;
 }
@@ -613,12 +613,25 @@ body {
   color: #966b00;
 }
 
-.faq-accordeon__title {
-  margin-bottom: 20px;
+@media (min-width: 768px) {
+  .faq-accordeon__columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
-.faq-accordeon__list {
-  margin-bottom: 60px;
+.faq-accordeon__title {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -627,21 +640,19 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: wrap;
-        -ms-flex-flow: wrap;
-            flex-flow: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
   }
 }
 
 .faq-accordeon__item {
   padding-bottom: 20px;
-  -webkit-flex-basis: 48%;
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%;
 }
 
 .faq-accordeon__link {
@@ -1790,6 +1801,12 @@ body {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .faq-main {
+    min-height: 60vh;
+  }
+}
+
 .faq-main__breadcrumbs {
   margin-top: 100px;
   margin-bottom: 20px;
@@ -1799,6 +1816,7 @@ body {
   position: relative;
   z-index: 3;
   width: 100%;
+  height: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
           box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2), inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);

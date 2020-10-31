@@ -179,3 +179,15 @@ body.lock {
     overflow: hidden;
   }
 }
+
+.full-screen-site {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    width: max-content;
+    position: absolute;
+    bottom: 40px;
+    left: 12px;
+  }
+}

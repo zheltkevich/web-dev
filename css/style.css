@@ -996,6 +996,22 @@ body {
   }
 }
 
+.full-screen-site {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .full-screen-site {
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: absolute;
+    bottom: 40px;
+    left: 12px;
+  }
+}
+
 .main__first-screen {
   margin-bottom: 80px;
 }

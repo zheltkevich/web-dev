@@ -18,7 +18,6 @@
 
   <!-- HEADER  -->
   <header class="header">
-    <div class="container">
       <div class="header__wrapper">
         <div class="header__mobile-navbar">
           <button class="header__mobile-navbar-toggler" type="button">
@@ -33,6 +32,9 @@
         </div>
         <nav class="header__main-navbar main-navbar main-navbar--closed">
           <ul class="main-navbar__list">
+            <li class="main-navbar__item">
+              <a class="main-navbar__link" href="index.html">Главная</a>
+            </li>
             <li class="main-navbar__item">
               <a class="main-navbar__link" href="works.html">Работы</a>
             </li>
@@ -51,7 +53,6 @@
           </ul>
         </nav>
       </div>
-    </div>
   </header>
 
 
@@ -338,7 +339,7 @@
         <p class="bottom-bar__copyright">
           © 2018—2020
         </p>
-        <a href="#top" class="bottom-bar__button-top button" type="button">
+        <a href="#" class="bottom-bar__button-top button" type="button">
           Наверх
         </a>
       </div>
@@ -346,8 +347,12 @@
     </div>
 
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous">
+  </script>
   <script>
     SmoothScroll({
       // Время скролла 400 = 0.4 секунды

@@ -16,3 +16,9 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // -------------------------------------------------------
+$(document).ready(function() {
+  $(".header__mobile-navbar-toggler").click(function(event) {
+    $(".main-navbar").toggleClass("main-navbar--opened");
+    $("body").toggleClass("lock");
+  });
+});

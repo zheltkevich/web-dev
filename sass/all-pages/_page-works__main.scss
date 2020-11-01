@@ -130,7 +130,7 @@
   padding: 20px 20px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     max-width: 360px;

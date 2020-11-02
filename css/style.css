@@ -1460,7 +1460,21 @@ body {
 .services-card__title {
   font-size: 20px;
   color: #2d2d2d;
-  margin-bottom: 17px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.services-card__title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-image: url(../img/separator.svg);
+  background-repeat: no-repeat;
+  background-position: initial;
+  position: absolute;
+  top: 70px;
 }
 
 .services-card__price {

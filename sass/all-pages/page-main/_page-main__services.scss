@@ -60,27 +60,27 @@
 
 
       position: absolute;
-      top: 70px;
+      top: 73px;
     }
   }
 
-  &__price {
-    width: 200px;
-    margin-bottom: 20px;
-    color: #2d2d2d;
+  // &__price {
+  //   width: 200px;
+  //   margin-bottom: 20px;
+  //   color: #2d2d2d;
 
-    &::before {
-      display: block;
-      content: "";
-      width: 200px;
-      height: 2px;
-      background-image: url(../img/separator.svg);
-      background-repeat: no-repeat;
+  //   &::before {
+  //     display: block;
+  //     content: "";
+  //     width: 200px;
+  //     height: 2px;
+  //     background-image: url(../img/separator.svg);
+  //     background-repeat: no-repeat;
 
-      position: relative;
-      top: -5px;
-    }
-  }
+  //     position: relative;
+  //     top: -5px;
+  //   }
+  // }
 
   &__description {
     width: 200px;

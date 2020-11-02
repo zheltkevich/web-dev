@@ -2,6 +2,7 @@
 @import "../mixins";
 
 .services {
+  position: relative;
 
   &__title {
     margin-bottom: 30px;

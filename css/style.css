@@ -544,7 +544,9 @@ body {
 }
 
 .anchor {
-  height: 100px;
+  position: absolute;
+  left: 0;
+  top: -100px;
 }
 
 @media (min-width: 1200px) {
@@ -1394,6 +1396,10 @@ body {
   height: 100%;
 }
 
+.services {
+  position: relative;
+}
+
 .services__title {
   margin-bottom: 30px;
 }
@@ -1661,6 +1667,7 @@ body {
 }
 
 .works-content__block {
+  position: relative;
   margin-bottom: 40px;
 }
 
@@ -1781,7 +1788,7 @@ body {
 }
 
 .about-main__hello {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .about-main__contacts {
@@ -1951,6 +1958,10 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 6px;
+}
+
+.contacts {
+  position: relative;
 }
 
 .contacts__title {

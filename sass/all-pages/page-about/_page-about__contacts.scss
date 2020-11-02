@@ -65,38 +65,3 @@
     }
   }
 }
-
-
-.askme-form {
-
-  &__heading {
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-
-  &__item {
-    margin-bottom: 12px;
-  }
-
-  &__input {
-    width: 100%;
-    min-height: 40px;
-    resize: vertical;
-    border: 1px solid #2d2d2d;
-    border-radius: 10px;
-
-    &::placeholder {
-      padding-top: 6px;
-      padding-left: 10px;
-    }
-  }
-
-  &__input-title {
-
-  }
-
-  &__button {
-    margin-top: 20px;
-    width: 100%;
-  }
-}

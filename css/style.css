@@ -1988,8 +1988,14 @@ body {
 }
 
 @media (min-width: 768px) {
-  .contacts__list {
-    width: 40%;
+  .contacts__list1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__list2 {
+    width: 50%;
   }
 }
 

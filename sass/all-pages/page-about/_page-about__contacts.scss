@@ -16,10 +16,17 @@
     }
   }
 
-  &__list {
+  &__list1 {
 
     @media (min-width: $tablet-width) {
-      width: 40%;
+      width: 50%;
+    }
+  }
+
+  &__list2 {
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
     }
   }
 

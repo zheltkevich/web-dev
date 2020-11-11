@@ -439,26 +439,10 @@ img {
   800 - heavy
   900 - black 
 */
-@font-face {
-  font-family: "PT-Root-UI";
-  src: url("../fonts/PT-Root-UI_Bold.woff2");
-  src: local("☺"), url("../fonts/PT-Root-UI_Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Root UI";
-  src: url("../fonts/PT-Root-UI_Medium.woff2");
-  src: local(""), url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
 /* Global */
 html,
 body {
-  font-family: "PT Root UI", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;

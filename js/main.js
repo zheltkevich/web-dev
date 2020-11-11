@@ -15,10 +15,12 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// -------------------------------------------------------
-$(document).ready(function() {
-  $(".header__mobile-navbar-toggler").click(function(event) {
-    $(".main-navbar").toggleClass("main-navbar--opened");
-    $("body").toggleClass("lock");
-  });
-});
+// Navbar opener ---------------------------------------
+let navbar = document.querySelector('.main-navbar')
+let burgerButton = document.querySelector('.header__mobile-navbar-toggler')
+
+burgerButton.onclick = function () {
+  navbar.classList.toggle('main-navbar--opened');
+  document.querySelector('.body').classList.toggle('lock');
+  console.log('Кнопка меню нажата');
+};
